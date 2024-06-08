@@ -1,14 +1,14 @@
 "use client";
 import { useState } from "react";
 import Card from "../../components/ui/Card";
-import Textinput from "../../components/ui/Textinput";
+// import Textinput from "../../components/ui/Textinput";
 import GroupChart5 from "../../components/chart/group-chart5";
 import SimpleBar from "simplebar-react";
 import HistoryChart from "../../components/chart/group-chart5";
 import AccountReceivable from "../../components/chart/account-receivable";
 import AccountPayable from "../../components/chart/account-payable";
 import CardSlider from '../../components/ui/CardSlider'
-import TransactionsTable from "../../components/table/transactions";
+// import TransactionsTable from "../../components/table/transactions";
 import SelectMonth from "../../components/chart/SelectMonth";
 import HomeBredCurbs from "../../components/ui/Breadcrumbs";
 import mainUserImg from '../../assets/images/all-img/main-user.png'
@@ -140,11 +140,11 @@ const BankingPage = () => {
                                 >
                                     Amount
                                 </span>
-                                <Textinput
+                                {/* <Textinput
                                     placeholder="$6547"
                                     id="cdp"
                                     className="bg-transparent border-none focus:ring-0 focus:border-none p-0 text-slate-900 dark:text-white text-sm placeholder:text-slate-400 placeholder:font-medium  h-auto font-medium"
-                                />
+                                /> */}
                             </div>
                             <div className="bg-slate-100 dark:bg-slate-900 rounded-md p-4">
                                 <label
@@ -154,12 +154,12 @@ const BankingPage = () => {
                                     Recipient account number
                                 </label>
 
-                                <Textinput
+                                {/* <Textinput
                                     placeholder="3458-3548-6548-3244"
                                     isMask
                                     id="cd"
                                     className="bg-transparent border-none focus:ring-0 focus:border-none p-0 text-slate-900 dark:text-white text-sm placeholder:text-slate-400 h-auto placeholder:font-medium font-medium"
-                                />
+                                /> */}
                             </div>
                             <div className="flex justify-between">
                                 <div>
@@ -181,7 +181,7 @@ const BankingPage = () => {
                 </div>
                 <div className="lg:col-span-8 col-span-12">
                     <div className="space-y-5 bank-table">
-                        <TransactionsTable />
+                        {/* <TransactionsTable /> */}
                         <Card
                             bodyClass="p-4"
                             subtitle={""}

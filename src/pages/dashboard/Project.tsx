@@ -5,8 +5,17 @@ import Icon from "../../components/ui/Icon";
 import { Disclosure } from '@headlessui/react';
 import Calculation from "../../components/chart/Calculation";
 import SelectMonth from "../../components/chart/SelectMonth";
+interface ChangeItem {
+    name: string;
+    tag: string;
+}
 
-const items = [
+interface VersionItem {
+    version: string;
+    date: string;
+    changes: ChangeItem[];
+}
+const items: VersionItem[] = [
     {
         version: "Version 2.0.1",
         date: "1 February 2023",
@@ -69,15 +78,7 @@ const items = [
             },
         ],
     },
-    {
-        version: "Version 1.0.0 ",
-        date: "29 December 2022",
-        changes: [
-            {
-                name: "Initial Release",
-            },
-        ],
-    },
+
 ];
 const ChangelogPage: React.FC = () => {
     return (

@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import Icon from "../../components/ui/Icon";
-const HomeBredCurbs = ({ title }) => {
-  const [value, setValue] = useState({
-    startDate: new Date(),
-    endDate: new Date().setMonth(11),
-  });
 
-  const handleValueChange: React.FC = (newValue) => {
-    setValue(newValue);
-  };
+// Define the type for the props
+interface HomeBredCurbsProps {
+  title: string;
+}
+
+const HomeBredCurbs: React.FC<HomeBredCurbsProps> = ({ title }) => {
+  // const [value, setValue] = useState({
+  //   startDate: new Date(),
+  //   endDate: new Date().setMonth(11),
+  // });
+
+
   return (
     <div className="flex justify-between flex-wrap items-center mb-6">
       <h4 className="font-medium lg:text-2xl text-xl capitalize text-slate-900 inline-block ltr:pr-4 rtl:pl-4">

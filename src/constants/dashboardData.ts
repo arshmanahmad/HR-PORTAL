@@ -10,136 +10,136 @@ export interface MenuItemI {
 }
 
 export const menuItems: MenuItemI[] = [
+  // {
+  //   title: "Tableau de bord",
+  //   icon: "heroicons-outline:home",
+  //   isOpen: true,
+  //   isHide: false,
+  //   child: [
+  //     {
+  //       childtitle: "Mon Compte",
+  //       childlink: "/dashboard/banking",
+  //     },
+  //     {
+  //       childtitle: "Mon Profil",
+  //       childlink: "/dashboard/profile",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Employés",
+  //   icon: "heroicons-outline:home",
+  //   isOpen: false,
+  //   isHide: true,
+  //   child: [
+  //     {
+  //       childtitle: "Gestion des Agents",
+  //       childlink: "/dashboard/changelog",
+  //     },
+  //     {
+  //       childtitle: "Exprimer un besoin",
+  //       childlink: "/dashboard/gestion/besoin",
+  //     },
+  //     {
+  //       childtitle: "Arrêt de travail ",
+  //       childlink: "/dashboard/gestion/arret-de-travail",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Absences & Congés",
+  //   isHide: true,
+  //   icon: "heroicons-outline:chat",
+
+  //   child: [
+  //     {
+  //       childtitle: "Congé annuel ",
+  //       childlink: "/dashboard/crm",
+  //     },
+  //     {
+  //       childtitle: "Permission jour à jour",
+  //       childlink: "ecommerce",
+  //     },
+  //     {
+  //       childtitle: "Permission heure à heure",
+  //       childlink: "ecommerce",
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   isHeadr: true,
+  //   title: "Mes Validations",
+  // },
+  // {
+  //   title: "validations en attente",
+  //   icon: "heroicons-outline:lock-closed",
+  //   link: "#",
+  //   child: [
+  //     {
+  //       childtitle: "Congés annuels",
+  //       childlink: "/conge/annuels",
+  //     },
+  //     {
+  //       childtitle: "Congés de maternité ",
+  //       childlink: "/conge/maternite",
+  //     },
+  //     {
+  //       childtitle: "Permission jour à jour",
+  //       childlink: "/permission/jour",
+  //     },
+  //     {
+  //       childtitle: "Permission heure à heure",
+  //       childlink: "/permission/heure",
+  //     },
+  //     {
+  //       childtitle: "Changement de planning",
+  //       childlink: "/plannig",
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   isHeadr: true,
+  //   title: "Mon profil",
+  // },
+  // {
+  //   title: "Fiche Agent",
+  //   icon: "heroicons-outline:view-grid-add",
+  //   link: "/fiche/agent",
+  // },
+  // {
+  //   title: "Mon Planing",
+  //   icon: "heroicons-outline:view-grid-add",
+  //   link: "/planing",
+  // },
+
+  // {
+  //   isHeadr: true,
+  //   title: "Support",
+  // },
+  // {
+  //   title: "Guide du responsable hiérachique",
+  //   icon: "heroicons-outline:clipboard-list",
+  //   link: "/guide/hierachique",
+  // },
+  // {
+  //   title: "Guide de l'utilisateur ",
+  //   icon: "heroicons-outline:table",
+  //   link: "/guide/utilisateur",
+  // },
   {
-    title: "Tableau de bord",
+    isHeadr: true,
+    title: "Profile",
+  },
+  {
+    title: "Profile",
     icon: "heroicons-outline:home",
     isOpen: true,
     isHide: false,
     child: [
       {
-        childtitle: "Mon Compte",
-        childlink: "/dashboard/banking",
-      },
-      {
-        childtitle: "Mon Profil",
-        childlink: "/dashboard/profile",
-      },
-    ],
-  },
-  {
-    title: "Employés",
-    icon: "heroicons-outline:home",
-    isOpen: false,
-    isHide: true,
-    child: [
-      {
-        childtitle: "Gestion des Agents",
-        childlink: "/dashboard/changelog",
-      },
-      {
-        childtitle: "Exprimer un besoin",
-        childlink: "/dashboard/gestion/besoin",
-      },
-      {
-        childtitle: "Arrêt de travail ",
-        childlink: "/dashboard/gestion/arret-de-travail",
-      },
-    ],
-  },
-  {
-    title: "Absences & Congés",
-    isHide: true,
-    icon: "heroicons-outline:chat",
-
-    child: [
-      {
-        childtitle: "Congé annuel ",
-        childlink: "/dashboard/crm",
-      },
-      {
-        childtitle: "Permission jour à jour",
-        childlink: "ecommerce",
-      },
-      {
-        childtitle: "Permission heure à heure",
-        childlink: "ecommerce",
-      },
-    ],
-  },
-
-  {
-    isHeadr: true,
-    title: "Mes Validations",
-  },
-  {
-    title: "validations en attente",
-    icon: "heroicons-outline:lock-closed",
-    link: "#",
-    child: [
-      {
-        childtitle: "Congés annuels",
-        childlink: "/conge/annuels",
-      },
-      {
-        childtitle: "Congés de maternité ",
-        childlink: "/conge/maternite",
-      },
-      {
-        childtitle: "Permission jour à jour",
-        childlink: "/permission/jour",
-      },
-      {
-        childtitle: "Permission heure à heure",
-        childlink: "/permission/heure",
-      },
-      {
-        childtitle: "Changement de planning",
-        childlink: "/plannig",
-      },
-    ],
-  },
-
-  {
-    isHeadr: true,
-    title: "Mon profil",
-  },
-  {
-    title: "Fiche Agent",
-    icon: "heroicons-outline:view-grid-add",
-    link: "/fiche/agent",
-  },
-  {
-    title: "Mon Planing",
-    icon: "heroicons-outline:view-grid-add",
-    link: "/planing",
-  },
-
-  {
-    isHeadr: true,
-    title: "Support",
-  },
-  {
-    title: "Guide du responsable hiérachique",
-    icon: "heroicons-outline:clipboard-list",
-    link: "/guide/hierachique",
-  },
-  {
-    title: "Guide de l'utilisateur ",
-    icon: "heroicons-outline:table",
-    link: "/guide/utilisateur",
-  },
-  {
-    isHeadr: true,
-    title: "My Profile",
-  },
-  {
-    title: "My Profile",
-    icon: "heroicons-outline:home",
-    isOpen: true,
-    isHide: false,
-    child: [
-      {
-        childtitle: "Profile detail",
+        childtitle: "Profile",
         childlink: "/dashboard/profile",
       },
       {
@@ -153,6 +153,26 @@ export const menuItems: MenuItemI[] = [
 
     ],
   },
+  {
+    isHeadr: true,
+    title: "Banking",
+  },
+  {
+    title: "Banking",
+    icon: "heroicons-outline:view-grid-add",
+    link: "/dashboard/banking",
+  },
+  {
+    title: "CRM",
+    icon: "heroicons-outline:view-grid-add",
+    link: "/dashboard/crm",
+  },
+  {
+    title: "Changelog",
+    icon: "heroicons-outline:view-grid-add",
+    link: "/dashboard/changelog",
+  },
+
   {
     isHeadr: true,
     title: "My Staff",
@@ -177,6 +197,10 @@ export const menuItems: MenuItemI[] = [
       },
 
     ],
+  },
+  {
+    isHeadr: true,
+    title: "Others",
   },
   {
     title: "Management",

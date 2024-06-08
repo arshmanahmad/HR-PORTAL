@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, FocusEvent } from "react";
 import Icon from "../../components/ui/Icon";
-import Cleave from "cleave.js/react";
-import "cleave.js/dist/addons/cleave-phone.us";
+// import Cleave from "cleave.js/react";
+// import "cleave.js/dist/addons/cleave-phone.us";
 import { FieldError, UseFormRegister } from "react-hook-form";
 
 interface TextinputProps {
@@ -26,7 +26,7 @@ interface TextinputProps {
   description?: string;
   hasicon?: boolean;
   onChange?: (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLInputElement>) => void;
-  options?: Cleave.Options;
+  // options?: Cleave.Options;
   onFocus?: (e: FocusEvent<HTMLInputElement>) => void;
   defaultValue?: string;
   [key: string]: any;
@@ -106,7 +106,7 @@ const Textinput: React.FC<TextinputProps> = ({
             id={id}
           />
         )}
-        {name && isMask && (
+        {/* {name && isMask && (
           <Cleave
             {...register && register(name)}
             {...rest}
@@ -133,7 +133,7 @@ const Textinput: React.FC<TextinputProps> = ({
             disabled={disabled}
             onChange={onChange}
           />
-        )}
+        )} */}
         {/* icon */}
         <div className="flex text-xl absolute ltr:right-[14px] rtl:left-[14px] top-1/2 -translate-y-1/2  space-x-1 rtl:space-x-reverse">
           {hasicon && (
@@ -166,8 +166,8 @@ const Textinput: React.FC<TextinputProps> = ({
       {error && (
         <div
           className={` mt-2 ${msgTooltip
-              ? " inline-block bg-danger-500 text-white text-[10px] px-2 py-1 rounded"
-              : " text-danger-500 block text-sm"
+            ? " inline-block bg-danger-500 text-white text-[10px] px-2 py-1 rounded"
+            : " text-danger-500 block text-sm"
             }`}
         >
           {error.message}
@@ -177,8 +177,8 @@ const Textinput: React.FC<TextinputProps> = ({
       {validate && (
         <div
           className={` mt-2 ${msgTooltip
-              ? " inline-block bg-success-500 text-white text-[10px] px-2 py-1 rounded"
-              : " text-success-500 block text-sm"
+            ? " inline-block bg-success-500 text-white text-[10px] px-2 py-1 rounded"
+            : " text-success-500 block text-sm"
             }`}
         >
           {validate}

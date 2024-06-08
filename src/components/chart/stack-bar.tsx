@@ -1,4 +1,3 @@
-import React from "react";
 import useDarkMode from "../../hooks/useDarkMode";
 import ApexChart from 'react-apexcharts';
 
@@ -111,7 +110,7 @@ const StackBarChart = ({ height = 410 }) => {
     },
     tooltip: {
       y: {
-        formatter: function (val) {
+        formatter: function (val: number): string {
           return "$ " + val + " thousands";
         },
       },

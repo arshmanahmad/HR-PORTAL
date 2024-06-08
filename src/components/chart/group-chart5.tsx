@@ -1,4 +1,3 @@
-import React from "react";
 import { colors } from "../../constant/data";
 ///////////@ts-ignore//////////
 // import dynamic from "next/dynamic";

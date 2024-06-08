@@ -3,7 +3,18 @@ import Card from "../../components/ui/Card";
 import Badge from "../../components/ui/Badge";
 import Icon from "../../components/ui/Icon";
 import { Disclosure } from '@headlessui/react';
-const items = [
+interface ChangeItem {
+    name: string;
+    tag: "added" | "update" | "fixed";
+}
+
+interface VersionItem {
+    version: string;
+    date: string;
+    changes: ChangeItem[];
+}
+
+const items: VersionItem[] = [
     {
         version: "Version 2.0.1",
         date: "1 February 2023",
@@ -72,10 +83,12 @@ const items = [
         changes: [
             {
                 name: "Initial Release",
+                tag: "added",
             },
         ],
     },
 ];
+
 const ChangelogPage: React.FC = () => {
     return (
         <div className="grid grid-cols-12 gap-5">

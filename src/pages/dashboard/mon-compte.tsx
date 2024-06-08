@@ -94,7 +94,13 @@ const profile = () => {
                 </div>
                 <div className="grid grid-cols-12 gap-6">
                     <div className="lg:col-span-4 col-span-12">
-                        <Card title="Info">
+                        <Card
+                            titleClass=""
+                            bodyClass="p-4"
+                            subtitle={""}
+                            headerslot={""}
+                            noborder={false}
+                            title="Info">
                             <ul className="list space-y-8">
                                 <li className="flex space-x-3 rtl:space-x-reverse">
                                     <div className="flex-none text-2xl text-slate-600 dark:text-slate-300">
