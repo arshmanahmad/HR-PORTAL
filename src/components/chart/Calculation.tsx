@@ -1,6 +1,6 @@
 import { colors } from "../../constant/data";
 import useDarkMode from "../../hooks/useDarkMode";
-import ApexChart from 'react-apexcharts';
+import ApexChart from "react-apexcharts";
 
 //@ts-ignore
 
@@ -52,7 +52,13 @@ const Calculation = ({ height = 335 }) => {
 
   return (
     <>
-      <ApexChart options={options} series={series} type="pie" height={height} />
+      <ApexChart
+        // @ts-ignore
+        options={options}
+        series={series}
+        type="pie"
+        height={height}
+      />
     </>
   );
 };

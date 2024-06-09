@@ -2,7 +2,7 @@
 // const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { colors } from "../../constant/data";
 import useDarkMode from "../../hooks/useDarkMode";
-import ApexCharts from 'react-apexcharts';
+import ApexCharts from "react-apexcharts";
 const AccountPayable = ({ height = 300 }) => {
   const [isDark] = useDarkMode();
   const series = [
@@ -92,7 +92,13 @@ const AccountPayable = ({ height = 300 }) => {
   };
   return (
     <>
-      <ApexCharts options={options} series={series} type="line" height={height} />
+      <ApexCharts
+        /* @ts-ignore */
+        options={options}
+        series={series}
+        type="line"
+        height={height}
+      />
     </>
   );
 };

@@ -2,7 +2,7 @@ import { colors } from "../../constant/data";
 ///////////@ts-ignore//////////
 // import dynamic from "next/dynamic";
 // const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
-import ApexCharts from 'react-apexcharts';
+import ApexCharts from "react-apexcharts";
 const columnCharthome2 = {
   series: [
     {
@@ -253,6 +253,7 @@ const GroupChart5 = () => {
           </div>
           <div className="ml-auto max-w-[124px]">
             <ApexCharts
+              // @ts-ignore
               options={item.name.options}
               series={item.name.series}
               type="bar"

@@ -4,7 +4,7 @@ import React from "react";
 // const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { colors } from "../../constant/data";
 import useDarkMode from "../../hooks/useDarkMode";
-import ApexCharts from 'react-apexcharts';
+import ApexCharts from "react-apexcharts";
 interface Props {
   height?: number;
 }
@@ -98,10 +98,12 @@ const AccountReceivable: React.FC<Props> = ({ height = 300 }) => {
   return (
     <>
       <ApexCharts
+        // @ts-ignore
         options={options}
         series={series}
         type="line"
-        height={height} />
+        height={height}
+      />
     </>
   );
 };

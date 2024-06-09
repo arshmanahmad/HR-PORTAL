@@ -143,44 +143,27 @@ export const menuItems: MenuItemI[] = [
         childlink: "/dashboard/profile",
       },
       {
-        childtitle: "Mon Compte",
-        childlink: "/dashboard/monCompte",
+        childtitle: "My CHU Cocody",
+        childlink: "/dashboard/myChuCocody",
       },
-      {
-        childtitle: "Project",
-        childlink: "/dashboard/project",
-      },
-
     ],
   },
   {
-    isHeadr: true,
-    title: "Banking",
-  },
-  {
-    title: "Banking",
-    icon: "heroicons-outline:view-grid-add",
-    link: "/dashboard/banking",
-  },
-  {
-    title: "CRM",
-    icon: "heroicons-outline:view-grid-add",
+    title: "Leave management",
+    icon: "heroicons-outline:lock-closed",
+    isOpen: true,
+    isHide: false,
     link: "/dashboard/crm",
   },
   {
-    title: "Changelog",
-    icon: "heroicons-outline:view-grid-add",
-    link: "/dashboard/changelog",
-  },
-
-  {
     isHeadr: true,
     title: "My Staff",
   },
   {
     title: "My Staff",
-    icon: "heroicons-outline:chat",
+    icon: "heroicons-outline:home",
     isOpen: true,
+    link: "/dashboard/profile",
     isHide: false,
     child: [
       {
@@ -195,7 +178,6 @@ export const menuItems: MenuItemI[] = [
         childtitle: "Configuration",
         childlink: "/dashboard/profile",
       },
-
     ],
   },
   {
@@ -220,36 +202,28 @@ export const menuItems: MenuItemI[] = [
         childtitle: "Personnel Administration",
         childlink: "/dashboard/profile",
       },
-
     ],
   },
-  {
-    title: "my CHU Cocody",
-    icon: "heroicons-outline:home",
-    isOpen: true,
-    isHide: false,
 
-  },
-  {
-    title: "Feedback",
-    icon: "heroicons-outline:home",
-    isOpen: true,
-    isHide: false,
-
-  },
   {
     title: "Reporting & Analysis",
     icon: "heroicons-outline:view-grid-add",
     isOpen: true,
     isHide: false,
-
-  },
-  {
-    title: "Leave management",
-    icon: "heroicons-outline:lock-closed",
-    isOpen: true,
-    isHide: false,
-
+    child: [
+      {
+        childtitle: "Feedback",
+        childlink: "/dashboard/profile",
+      },
+      {
+        childtitle: "Evaluation",
+        childlink: "/dashboard/profile",
+      },
+      {
+        childtitle: "Personnel Administration",
+        childlink: "/dashboard/profile",
+      },
+    ],
   },
 ];
 

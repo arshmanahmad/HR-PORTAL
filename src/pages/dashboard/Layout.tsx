@@ -62,7 +62,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         className={`app-warp    ${isDark ? "dark" : "light"} ${skin === "bordered" ? "skin--bordered" : "skin--default"
           }
       ${navbarType === "floating" ? "has-floating" : ""}
-      `}
+      ` }
       >
         <ToastContainer />
         <Header className={width > breakpoints.xl ? switchHeaderClass() : ""} />

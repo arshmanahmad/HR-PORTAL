@@ -19,13 +19,13 @@ const HomeBredCurbs: React.FC<HomeBredCurbsProps> = ({ title }) => {
         {title}
       </h4>
       <div className="flex sm:space-x-4 space-x-2 sm:justify-end items-center rtl:space-x-reverse">
-        <div className="date-btn inline-flex btn btn-md whitespace-nowrap space-x-2 rtl:space-x-reverse cursor-pointer bg-white dark:bg-slate-800 dark:text-slate-300 btn-md h-min text-sm font-normal text-slate-900">
+        {/* <div className="date-btn inline-flex btn btn-md whitespace-nowrap space-x-2 rtl:space-x-reverse cursor-pointer bg-white dark:bg-slate-800 dark:text-slate-300 btn-md h-min text-sm font-normal text-slate-900">
           <span className="text-lg">
             <Icon icon="heroicons:calendar" />
           </span>
           <span>Weekly</span>
-        </div>
-        <div className="date-btn inline-flex btn btn-md whitespace-nowrap space-x-2 rtl:space-x-reverse cursor-pointer bg-white dark:bg-slate-800 dark:text-slate-300 btn-md h-min text-sm font-normal text-slate-900">
+        </div> */}
+        <div className="flex items-center bg-[white] p-2 rounded-lg">
           <span className="text-lg">
             <Icon icon="heroicons-outline:filter" />
           </span>

@@ -60,9 +60,8 @@ const MobileMenu = ({ className = "custom-class" }) => {
       </div>
 
       <div
-        className={`h-[60px]  absolute top-[80px] nav-shadow z-[1] w-full transition-all duration-200 pointer-events-none ${
-          scroll ? " opacity-100" : " opacity-0"
-        }`}
+        className={`h-[60px]  absolute top-[80px] nav-shadow z-[1] w-full transition-all duration-200 pointer-events-none ${scroll ? " opacity-100" : " opacity-0"
+          }`}
       ></div>
       <SimpleBar
         className="sidebar-menu px-4 h-[calc(100%-80px)]"

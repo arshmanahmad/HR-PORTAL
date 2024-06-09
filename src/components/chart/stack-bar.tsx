@@ -1,5 +1,5 @@
 import useDarkMode from "../../hooks/useDarkMode";
-import ApexChart from 'react-apexcharts';
+import ApexChart from "react-apexcharts";
 
 import { colors } from "../../constant/data";
 // @ts-ignore
@@ -125,7 +125,13 @@ const StackBarChart = ({ height = 410 }) => {
   };
   return (
     <>
-      <ApexChart options={options} series={series} type="bar" height={height} />
+      <ApexChart
+        // @ts-ignore
+        options={options}
+        series={series}
+        type="bar"
+        height={height}
+      />
     </>
   );
 };
