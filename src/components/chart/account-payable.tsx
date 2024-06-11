@@ -32,6 +32,7 @@ const AccountPayable = ({ height = 300 }) => {
     tooltip: {
       theme: "dark",
     },
+    //
     legend: {
       offsetY: 6,
       show: true,
