@@ -66,7 +66,7 @@ const Profile = () => {
                             subtitle=""
                             headerslot=""
                             noborder={false}
-                            title="My Absnets & Holidays"
+                            title="My absences & Holidays"
                         >
                             <div className="flex items-center justify-between">
                                 <div>
@@ -85,7 +85,7 @@ const Profile = () => {
                             subtitle={""}
                             headerslot={""}
                             noborder={false}
-                            title="Vacations Balance"
+                            title="Remaining leave"
                         >
                             {/* Add content related to vacations balance here */}
                             <div className="flex items-center justify-between">
@@ -123,7 +123,7 @@ const Profile = () => {
                             subtitle={""}
                             headerslot={""}
                             noborder={false}
-                            title="Leave Calender"
+                            title="Leave Calendar"
                         >
                             <div style={{ height: 500 }}>
                                 <Calendar
@@ -195,6 +195,27 @@ const Profile = () => {
                                     <div className="flex items-center">
                                         <Icon icon="heroicons:check-circle" className="w-6 h-6 text-gray-500 mr-2" />
                                         <span className="text-sm text-gray-500">5/4</span>
+                                    </div>
+                                </div>
+
+                            </Card>
+                            <Card
+                                bodyClass="p-4"
+                                subtitle={""}
+                                noborder={false}
+                                title="My Feedbacks"
+                                headerslot={<SelectMonth />}
+                            >
+                                <LinearProgress sx={{ color: 'bg-yellow-900' }} variant="determinate" value={60} />
+
+                                <div className="flex items-center justify-between">
+                                    <div className="flex flex-col">
+                                        <span className="text-lg font-bold mt-[1rem]">My Feedbacks</span>
+                                        <span className="text-gray-500">Status</span>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <Icon icon="heroicons:check-circle" className="w-6 h-6 text-gray-500 mr-2" />
+                                        <span className="text-sm text-gray-500">5/3</span>
                                     </div>
                                 </div>
 

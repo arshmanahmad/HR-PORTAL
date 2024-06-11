@@ -157,10 +157,10 @@ export const menuItems: MenuItemI[] = [
   },
   {
     isHeadr: true,
-    title: "My Staff",
+    title: "Settings",
   },
   {
-    title: "My Staff",
+    title: "Admin Settings",
     icon: "heroicons-outline:home",
     isOpen: true,
     link: "/dashboard/profile",
@@ -175,17 +175,17 @@ export const menuItems: MenuItemI[] = [
         childlink: "/dashboard/profile",
       },
       {
-        childtitle: "Configuration",
+        childtitle: "Structures",
         childlink: "/dashboard/profile",
       },
     ],
   },
   {
     isHeadr: true,
-    title: "Others",
+    title: "Personnel Administration",
   },
   {
-    title: "Management",
+    title: "Personnel Admin",
     icon: "heroicons-outline:chat",
     isOpen: true,
     isHide: false,
@@ -199,7 +199,7 @@ export const menuItems: MenuItemI[] = [
         childlink: "/dashboard/profile",
       },
       {
-        childtitle: "Personnel Administration",
+        childtitle: "Employee management",
         childlink: "/dashboard/profile",
       },
     ],
@@ -221,6 +221,10 @@ export const menuItems: MenuItemI[] = [
       },
       {
         childtitle: "Personnel Administration",
+        childlink: "/dashboard/profile",
+      },
+      {
+        childtitle: "Leave Management",
         childlink: "/dashboard/profile",
       },
     ],
