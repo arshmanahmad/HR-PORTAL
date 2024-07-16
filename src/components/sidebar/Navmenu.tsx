@@ -5,8 +5,10 @@ import { MenuItemI } from "../../constants/dashboardData";
 import { Link } from "react-router-dom";
 import Icon from "../ui/Icon";
 import Submenu from "./Submenu";
+import { useTranslation } from "react-i18next";
 
 const Navmenu = ({ menus }: { menus: MenuItemI[] }) => {
+  const { t } = useTranslation();
   const [activeSubmenu, setActiveSubmenu] = useState(null);
 
   const toggleSubmenu = (i: number) => {
@@ -63,14 +65,16 @@ const Navmenu = ({ menus }: { menus: MenuItemI[] }) => {
                 <span className="menu-icon flex-grow-0">
                   <Icon icon={item?.icon || ""} />
                 </span>
-                <div className="text-box flex-grow">{item.title}</div>
+                <div className="text-box flex-grow">
+                  {t("sidebar." + item.title)}
+                </div>
                 {/* @ts-ignore */}
                 {item.badge && <span className="menu-badge">{item.badge}</span>}
               </Link>
             )}
             {/* only for menulabel */}
             {item.isHeadr && !item.child && (
-              <div className="menulabel">{item.title}</div>
+              <div className="menulabel">{t("sidebar." + item.title)}</div>
             )}
             {/*    !!sub menu parent   */}
             {item.child && (
@@ -86,7 +90,7 @@ const Navmenu = ({ menus }: { menus: MenuItemI[] }) => {
                   <span className="menu-icon">
                     <Icon icon={item?.icon || ""} />
                   </span>
-                  <div className="text-box">{item.title}</div>
+                  <div className="text-box">{t("sidebar." + item.title)}</div>
                 </div>
                 <div className="flex-0">
                   <div

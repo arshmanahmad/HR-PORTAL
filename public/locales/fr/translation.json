@@ -1,0 +1,449 @@
+{
+  "sidebar": {
+    "MyDashboard": "Mon tableau de bord",
+    "Dashboard": {
+      "Overview": "Vue d'ensemble",
+      "MyProfile": "Mon profil",
+      "MyCCday": "Mon CHU de Cocody"
+    },
+    "LeaveManagement": "Gestion des congés",
+    "Evaluation": "Evaluation",
+    "Feedback": {
+      "Feedback": "Sondage des collaborateurs",
+      "NursingSurveys": "Enquête sur les soins des infirmiers & obstétricaux",
+      "DoctorSurveys": "Enquête sur les soins des medecins & dentistes"
+    },
+    "EmployeeManagement": "Gestion des employés",
+    "EmployeeManagementSub": {
+      "Teams": "Equipe",
+      "Staff": "Personnel",
+      "WorkSchedule": "Planning du mois"
+    },
+    "JobManagement": "Gestion des postes",
+    "JobCodingSub": {
+      "Jobs": "Postes",
+      "JobCoding": "Codification des postes",
+      "JobsByDepartment": "Postes par département",
+      "RequestsList": "Liste des demandes"
+    },
+    "Configuration": "Configuration",
+    "ConfigurationSub": {
+      "Department": "Département",
+      "EmployeePrivileges": "Privilèges des employés",
+      "Employees": "Employés",
+      "Functions": "Fonctions",
+      "Grade": "Grades",
+      "Jobs": "Emplois",
+      "NatureofContract": "Nature du contrat",
+      "Privileges": "Privilèges",
+      "Roles": "Rôles",
+      "Services": "Services",
+      "Units": "Unités"
+    },
+    "ResportingAnalytics": {
+      "index": "Rapports & analyses",
+      "HRDash": "Tableau de bord RH",
+      "AccessLogs": "Journaux d'accès"
+    }
+  },
+  "Overview": {
+    "MyProfile": "Mon Profil",
+    "MyAbsencesAndHolidays": "Mes absences & congés",
+    "MyAbsencesAndHolidaysChild": {
+      "TotalAbsents": "Total des absences",
+      "Percentage": "Pourcentage"
+    },
+    "RemainingLeave": "Congés restants",
+    "RemainingLeaveChild": {
+      "VacationBalance": "Solde des congés",
+      "ViewDetails": "Voir les détails"
+    },
+    "UpcomingLeaves": "Congés à venir",
+    "UpcomingLeavesChild": {
+      "NumberOfLeaves": "Nombre de jours",
+      "Percentage": "Pourcentage"
+    },
+    "LeaveCalendar": "Planning des congés",
+    "StaffSchedule": "Horaire du personnel",
+    "StaffScheduleChild": {
+      "StartDate": "Date de début",
+      "EndDate": "Date de fin",
+      "StartTime": "Heure de début",
+      "EndTime": "Heure de fin",
+      "NextShift": "La prochaine garde",
+      "NextShiftChild": {
+        "Date": "Date",
+        "Time": "Heure"
+      }
+    },
+    "MyAppraisal": "Mon évaluation",
+    "MyAppraisalChild": {
+      "MyAppraisal": "Mon évaluation",
+      "Status": "Statut"
+    },
+    "MyFeedback": "Mon sondage",
+    "MyFeedbackChild": {
+      "MyFeedback": "Mon sondage",
+      "Status": "Statut"
+    },
+    "CalendarFormChild": {
+      "PublicServiceJoiningDate": "Date d'entrée à la Fonction Publique:",
+      "JoiningChuDeCocodyDate": "Date d'entrée au CHU de Cocody:"
+    }
+  },
+  "LeaveManagement": {
+    "LeaveManagement": "Gestion des congés",
+    "Cards": {
+      "PendingLeaveRequests": "Demandes de congés en attente",
+      "GrantedLeaveRequests": "Demandes de congés accordées",
+      "RejectedLeaveRequests": "Demandes de congés refusées",
+      "MaternityLeaveRequests": "Demandes de congés de maternité",
+      "CurrentStatus": "Statut actuel"
+    },
+    "AddLeave": "Prendre un congé",
+    "table": {
+      "LeaveManagement": "Liste des demandes",
+      "columns": {
+        "Name": "Nom",
+        "Position": "Postes",
+        "Department": "Services",
+        "RequestedTime": "Nature de la demande",
+        "Date": "Date",
+        "OutOfCountry": "Hors du pays",
+        "Status": "Statut",
+        "Actions": "Actions"
+      }
+    }
+  },
+  "EditProfile": {
+    "Profile": "Profil",
+    "EnterDetails": "Entrer les informations",
+    "ProfilePhoto": "Photo de profil",
+    "FirstName": "Prénom",
+    "LastName": "Nom",
+    "Gender": "Genre",
+    "Title": "Titre/Civilité",
+    "Address": "Adresse",
+    "Email": "Email",
+    "PhoneNumber": "Numéro de téléphone",
+    "NatureofContract": "Nature du contrat",
+    "FunctionalDirection": "Direction fonctionnelle/Service",
+    "Division": "Unité/Service",
+    "Rank": "Grade",
+    "LineManagers": "Responsables Hiérarchiques",
+    "DirectionOfAssignment1": "Direction du responsable hiérarchique N°1",
+    "DirectionOfAssignment2": "Direction du responsable Hiérarchique N°2",
+    "AdditionalNotes": "Notes supplémentaires",
+    "Submit": "Enregistrer"
+  },
+  "ChuCocody": {
+    "ChuCocody": "Chu Cocody",
+    "Table1": {
+      "Agents": "Agents",
+      "Columns": {
+        "Name": "Nom",
+        "SUS": "SUS",
+        "Department": "Direction",
+        "Service": "Service"
+      }
+    },
+    "Table2": {
+      "Announcements": "Annonces",
+      "AddNewAnnouncement": "Ajouter une nouvelle annonce",
+      "Columns": {
+        "Title": "Titre",
+        "DateOfIssue": "Date de publication",
+        "EndDate": "Date de fin",
+        "Actions": "Actions"
+      }
+    },
+    "Organization Chart": {
+      "Organization Chart": "Organigramme",
+      "Position": "Poste",
+      "Department": "Direction",
+      "DepartmentHead": "Chef de direction",
+      "SubDivision": "Sous-division"
+    },
+    "Related Content": {
+      "RelatedContent": "Contenu connexe",
+      "Agents": "Agents",
+      "Announcements": "Annonces"
+    }
+  },
+  "Evaluation": {
+    "Evaluation": "Évaluation",
+    "EvaluationRequests": "Demandes d'évaluation",
+    "OngoingEvaluations": "Évaluations en cours",
+    "EvaluatedEmployees": "Employés évalués",
+    "NonEvaluated": "Non évalué",
+    "CurrentUpdate": "Mise à jour actuelle",
+    "SearchEmployees": "Rechercher des employés (après sélection)",
+    "SelectDepartment&service": "Sélectionner le département et le service",
+    "SelectDepartment": "Sélectionner le département",
+    "SelectService": "Sélectionner le service",
+    "StartEvaluation": "Commencer l'évaluation",
+    "Name": "Nom",
+    "LineManagerN+1": "RESPONSABLE HIÉRARCHIQUE N+1",
+    "Type": "Type",
+    "LineManagerN+2": "RESPONSABLE HIÉRARCHIQUE N+2",
+    "Status": "Statut",
+    "Actions": "Actions",
+    "ListOfEvaluations": "Liste des évaluations"
+  },
+  "Feedback": {
+    "ProvideFeedback": "Faire des commentaires",
+    "SelectPerson": "Sélectionner une personne",
+    "SelectReviewed:": "Sélectionner la personne à examiner:",
+    "SelectColleague": "Sélectionner un collègue",
+    "ClickConfirm": "Cliquez pour confirmer",
+    "SelectOptions": "Veuillez choisir les options requises",
+    "Reviews": "Revues",
+    "table": {
+      "ReviewerName": "Examinateur",
+      "Comment": "Commentaires",
+      "TimeStamp": "Horodatage",
+      "Rating": "Note",
+      "Actions": "Actions"
+    }
+  },
+  "NursingSurveys": {
+    "NursingSurveys": "Enquêtes sur les soins infirmiers",
+    "RequestSurvey": "Demander une enquête",
+    "table": {
+      "Name": "Nom",
+      "Description": "Description",
+      "DepartmentID": "Identifiant du département",
+      "CreatedAt": "Créé le",
+      "Actions": "Actions"
+    }
+  },
+  "DoctorSurveys": {
+    "RequestSurvey": "Demande de sondage",
+    "FeedbackForm": "Formulaire du sondage",
+    "table": {
+      "SurveyName": "Nom du sondage",
+      "Description": "Description",
+      "DepartmentID": "Sercice",
+      "CreatedAt": "Crée le",
+      "Actions": "Actions"
+    }
+  },
+  "Staff": {
+    "StaffMembers": "Employés",
+    "AddStaff": "Ajouter employé",
+    "table": {
+      "Name": "Nom",
+      "Department": "Service",
+      "Position": "Postes",
+      "Status": "Statut",
+      "Actions": "Actions"
+    }
+  },
+  "Teams": {
+    "AddTeam": "Ajouter une équipe",
+    "Members": "Membres",
+    "SelectService": "Sélectionnez le service",
+    "SelectDepartment": "Sélectionnez le département",
+    "SearchEmployee": "Rechercher un employé",
+    "Close": "Fermer",
+    "Submit": "Enregister"
+  },
+  "WorkSchedule": {
+    "WorkSchedule": "Planning de travail",
+    "AddWorkSchedule": "Ajouter un planning de travail",
+    "SelectDaysCalender": "Calendrier des jours choisis",
+    "SelectTeam": "Sélectionner une équipe",
+    "Total Days": "Nombre total de jours",
+    "Shifts": "Changements",
+    "Morning": "Matinée",
+    "Evening": "Après-midi",
+    "Night": "Soir",
+    "Upcoming Leaves": "Congés à venir",
+    "Percentage": "Pourcentage",
+    "table": {
+      "Name": "Noms",
+      "TeamCode": "Code d'équipe",
+      "Shift": "Période",
+      "Starting": "Démarrage",
+      "Ending": "Arrêt",
+      "Leave Conflicts": "Durée des congés",
+      "Service": "Service",
+      "Actions": "Actions"
+    }
+  },
+  "Jobs": {
+    "Jobs": "Emplois",
+    "JobDetails": "Détails de l'emploi",
+    "AddJob": "Ajouter un emploi",
+    "table": {
+      "JobTitle": "Intitulé du poste",
+      "Department": "Direction",
+      "JobCode": "Code du poste",
+      "Actions": "Actions"
+    }
+  },
+  "JobCoding": {
+    "JobCoding": "Codage des postes",
+    "table": {
+      "JobTitle": "Intitulé du poste",
+      "JobCode": "Code du poste",
+      "Department": "Direction",
+      "JobDescription": "Description de poste",
+      "Position": "Fonction",
+      "Actions": "Actions"
+    }
+  },
+  "JobsByDepartment": {
+    "JobsByDepartment": "Emplois par direction",
+    "table": {
+      "Position": "Fonction",
+      "TotalPosts": "Total des postes",
+      "Department": "Direction",
+      "VancantPosts": "Postes Vacants",
+      "Actions": "Actions"
+    }
+  },
+  "RequestsList": {
+    "RequestsList": "Liste des demandes",
+    "table": {
+      "RequestedBy": "Demandeurs",
+      "Designation": "Poste",
+      "Department": "Direction",
+      "NumberOfPositions": "Nombre de postes",
+      "Job Title": "Intitulé du poste",
+      "Status": "Statut",
+      "Actions": "Actions"
+    }
+  },
+  "Department": {
+    "Department": "Direction",
+    "AddDepartment": "Ajouter une direction",
+    "table": {
+      "DepartmentName": "Nom de la direction",
+      "Description": "Description",
+      "CreatedAt": "Créé le",
+      "Updated At": "mis à jour le",
+      "Actions": "Actions"
+    }
+  },
+  "Functions": {
+    "FunctionDetails": "Détails de configuration",
+    "AddFunction": "Ajouter une fonction",
+    "table": {
+      "FunctionName": " Nom de la fonction",
+      "Description": "Description",
+      "JobId": "Identifiant de tâche",
+      "CreatedAt": "Créé le",
+      "Updated At": "mis à jour le",
+      "Actions": "Actions"
+    }
+  },
+  "Grade": {
+    "GradeDetails": "Détails des grades",
+    "AddGrade": "Ajouter un grade",
+    "table": {
+      "GradeName": "Nom des grades",
+      "GradeLevel": "Niveau du Grade",
+      "JobId": "Identifiant de tâche",
+      "CreatedAt": "Créé le",
+      "Updated At": "Mis à jour le",
+      "Actions": "Actions"
+    }
+  },
+  "NatureofContract": {
+    "NatureofContract": "Nature du contrat",
+    "AddNatureofContract": "Ajouter un Contrat",
+    "table": {
+      "ContractName": "Nom du Contrat",
+      "Description": "Description",
+      "CreatedAt": "Créé le",
+      "Actions": "Actions"
+    }
+  },
+  "Privileges": {
+    "Privileges": "Privilèges",
+    "AddPrivileges": "Ajouter un Privilège",
+    "table": {
+      "PrivilegeName": "Nom du Privilège",
+      "Description": "Description",
+      "CreatedAt": "Créé le",
+      "Updated At": "Mis à jour le",
+      "Actions": "Actions"
+    }
+  },
+  "Roles": {
+    "Roles": "rôles",
+    "AddRoles": "Ajouter un rôle",
+    "table": {
+      "RoleName": "Nom du rôle",
+      "Description": "Description",
+      "CreatedAt": "Créé le",
+      "Updated At": "Mis à jour le",
+      "Actions": "Actions"
+    }
+  },
+  "Services": {
+    "Services": "Services",
+    "AddServices": "Ajouter un Service",
+    "table": {
+      "ServiceName": "Nom du Service ",
+      "Description": "Description",
+      "DepartmentId": "Identifiant de service",
+      "CreatedAt": "Créé le",
+      "Updated At": "Mis à jour le",
+      "Actions": "Actions"
+    }
+  },
+  "Units": {
+    "Units": "Unités",
+    "AddUnits": "Ajouter une unité",
+    "table": {
+      "UnitName": "Nom de l'unité",
+      "Description": "Description",
+      "Service tId": "Identifiant de service",
+      "CreatedAt": "Créé le",
+      "Updated At": "Mis à jour le",
+      "Actions": "Actions"
+    }
+  },
+  "AccessLogs": {
+    "AccessLogs": "Journal d'accès",
+    "LastHours": "Dernières 24h",
+    "LastDays": "Derniers 30 jours",
+    "MobileAppUsage": "Utilisation d'applications mobiles",
+    "NeverLoggedIn": "Nouvelle connection",
+    "Users": "Utilisateurs",
+    "Employees": "Employées",
+    "ActiveUsers": "Utlisateurs actifs",
+    "InActiveUsers": "Utlisateurs inactifs",
+    "GraphicalVisualization": "Visualisation graphique de l’état de l’utilisateur",
+    "Staff Members": "Membres du personnel",
+    "table": {
+      "UserName": "Nom de l'utilisateur",
+      "Action": "Action",
+      "IPAddress": "Adresse IP",
+      "Status": "Statut"
+    }
+  },
+  "HRDash": {
+    "ReportingAnalysis": "Rapports et analyses",
+    "NewAgents": "Nouveaux agents (30 derniers jours)",
+    "NumberDepartures": "Nombre de départs",
+    "Number": "Effectifs",
+    "Reason": "Justification",
+    "NumberAgentsTraining": "Nombre d’agents en formation",
+    "NumberAgentsAssigned": "Nombre d’agents affectés",
+    "TimeSpan": "Période",
+    "WorkforceGender": "Effectif selon le sexe",
+    "table": {
+      "Name": "Nom",
+      "Employment": "Emploi ",
+      "SUS": "SUS",
+      "Subdivision": "Sous-section "
+    },
+    "RetirementsCurrentYear": "Départs à la retraite en cours",
+    "NumberOfRetirements": "Nombre de départs à la retraite",
+    "NumberLaborHired": "Nombre de main-d’œuvre (embauché)",
+    "NumberOfLabor": "Nombre de travailleurs"
+  }
+}

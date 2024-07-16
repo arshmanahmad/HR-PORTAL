@@ -3,6 +3,7 @@ import LoginImg from "../../assets/images/loginPageImg.svg";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface numberValue {
   phoneNumber: string;
@@ -12,6 +13,7 @@ interface passValue {
 }
 
 const Login: React.FC = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const [userExistense, setUserExistense] = useState(false);
@@ -52,6 +54,7 @@ const Login: React.FC = () => {
               Chu de cocody <br />
               <span className="text-slate-800 text-[2.5rem] font-[600] dark:text-slate-400">
                 Espace reservé pour les agents du Chu
+                {t("Header")}
               </span>
             </h4>
           </div>

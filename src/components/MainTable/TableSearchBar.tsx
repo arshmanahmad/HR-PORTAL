@@ -7,7 +7,7 @@ interface TableSearchBarProps {
 
 const TableSearchBar: React.FC<TableSearchBarProps> = ({ onChange }) => {
   return (
-    <div className="flex mb-5 py-[7px]  px-3 bg-[white] rounded-lg shadow-md ">
+    <div className="flex py-[7px]  px-3 bg-[white] rounded-lg shadow-md ">
       <input
         type="text"
         className="border-none outline-none"

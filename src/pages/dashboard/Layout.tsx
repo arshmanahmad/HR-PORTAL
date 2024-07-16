@@ -50,7 +50,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     setTimeout(() => {
       setAgentData({
         // @ts-ignore
-        nom: "Shuja",
+        nom: "Michelle",
       });
     }, 3000);
   }, []);

@@ -9,17 +9,23 @@ import Table from '../../components/MainTable/Table'
 import Modal from "../../components/Modal/Modal";
 import { useState } from "react";
 import Icon from "../../components/ui/Icon";
+import { useTranslation } from "react-i18next";
 
 
-export interface Agent {
-    index: number;
+interface Agent {
+    id: number;                   // Changed from index to id
     name: string;
     position: string;
     department: string;
+    employment: string;           // Added this key
     subdivision: string;
-    directorateSUS: string;
+    directorate: string;          // Added this key
+    SUS: string;                  // Added this key
     departmentHead: string;
+    director: string;             // Added this key
+    service: string;
 }
+
 
 const config = {
     nodeSize: {
@@ -41,88 +47,72 @@ interface TreeNode {
     children?: TreeNode[];
 }
 
-const treeData: TreeNode = {
-    name: 'Directorate SUS',
-    children: [
-        {
-            name: 'Department: Security',
-            children: [
-                {
-                    name: 'Position: Agent',
-                    children: [
-                        {
-                            name: 'Subdivision: Field Operations',
-                        },
-                    ],
-                },
-                {
-                    name: 'Department Head: Jane Smith',
-                },
-            ],
-        },
-        {
-            name: 'Department: Intelligence',
-            children: [
-                {
-                    name: 'Position: Senior Agent',
-                    children: [
-                        {
-                            name: 'Subdivision: Counterintelligence',
-                        },
-                    ],
-                },
-                {
-                    name: 'Department Head: Bob Anderson',
-                },
-            ],
-        },
-    ],
-};
+
 const agentsData: Agent[] = [
     {
-        index: 1,
+        id: 1,
         name: "John Doe",
         position: "Software Engineer",
         department: "IT",
+        employment: "Full-time",            // Added value
         subdivision: "Development",
-        directorateSUS: "Technology Services",
-        departmentHead: "Jane Smith / Department Chief"
+        directorate: "Technology Services", // Added value
+        SUS: "Jane Smith", // Added value
+        departmentHead: "Jane Smith / Department Chief",
+        director: "Jane Smith",             // Added value
+        service: "Web Development"
     },
     {
-        index: 2,
+        id: 2,
         name: "Alice Johnson",
         position: "Product Manager",
         department: "Product",
+        employment: "Full-time",            // Added value
         subdivision: "Product Development",
-        directorateSUS: "Innovation and Strategy",
-        departmentHead: "Bob Brown / Department Chief"
+        directorate: "Innovation and Strategy", // Added value
+        SUS: "Bob Brown", // Added value
+        departmentHead: "Bob Brown / Department Chief",
+        director: "Bob Brown",              // Added value
+        service: "Product Management"
     },
     {
-        index: 3,
+        id: 3,
         name: "Sophia Moore",
         position: "Operations Manager",
         department: "Operations",
+        employment: "Full-time",            // Added value
         subdivision: "Logistics",
-        directorateSUS: "Operational Services",
-        departmentHead: "Isabella Thompson / Department Chief"
+        directorate: "Operational Services", // Added value
+        SUS: "Isabella Thompson", // Added value
+        departmentHead: "Isabella Thompson / Department Chief",
+        director: "Isabella Thompson",      // Added value
+        service: "Operations Management"
     },
     {
-        index: 4,
+        id: 4,
         name: "Alexander Thomas",
         position: "Financial Analyst",
         department: "Finance",
+        employment: "Full-time",            // Added value
         subdivision: "Financial Planning",
-        directorateSUS: "Financial Services",
-        departmentHead: "Mason White / Department Chief"
+        directorate: "Financial Services",  // Added value
+        SUS: "Mason White", // Added value
+        departmentHead: "Mason White / Department Chief",
+        director: "Mason White",            // Added value
+        service: "Financial Analysis"
     },
     {
-        index: 5,
+        id: 5,
         name: "Charlotte Martinez",
         position: "Legal Advisor",
         department: "Legal",
+        employment: "Full-time",            // Added value
         subdivision: "Corporate Law",
-        directorateSUS: "Legal Services",
-        departmentHead: "Ethan Garcia / Department Chief"
+        directorate: "Legal Services",      // Added value
+        SUS: "Ethan Garcia", // Added value
+        departmentHead: "Ethan Garcia / Department Chief",
+        director: "Ethan Garcia",           // Added value
+        service: "Legal Advisory"
     }
 ];
 
@@ -153,6 +143,44 @@ const announcementsData: Announcement[] = [
 ];
 const departments = ["IT", "Product", "Finance"];
 const Profile = () => {
+    const { t } = useTranslation()
+    const treeData: TreeNode = {
+        name: 'Directorate SUS',
+        children: [
+            {
+                name: 'Department: Security',
+                children: [
+                    {
+                        name: 'Position: Agent',
+                        children: [
+                            {
+                                name: 'Subdivision: Field Operations',
+                            },
+                        ],
+                    },
+                    {
+                        name: 'Department Head: Jane Smith',
+                    },
+                ],
+            },
+            {
+                name: 'Department: Intelligence',
+                children: [
+                    {
+                        name: 'Position: Senior Agent',
+                        children: [
+                            {
+                                name: 'Subdivision: Counterintelligence',
+                            },
+                        ],
+                    },
+                    {
+                        name: 'Department Head: Bob Anderson',
+                    },
+                ],
+            },
+        ],
+    };
     const [modal, setModal] = useState(false)
     const toggleModal = () => {
         setModal(!modal)
@@ -234,7 +262,7 @@ const Profile = () => {
                     </div>
                 </Modal>
             }
-            <HomeBredCurbs title="CHU Cocody" />
+            <HomeBredCurbs title={t("ChuCocody.ChuCocody")} />
             <div className="space-y-5">
                 <div className="grid grid-cols-12 gap-5">
                     <div className="lg:col-span-8 col-span-12 space-y-5">
@@ -243,37 +271,38 @@ const Profile = () => {
                             subtitle={""}
                             headerslot={""}
                             noborder={false}
-                            title="Agents"
+                            title={t("ChuCocody.Table1.Agents")}
                         >
                             <Table
                                 // routes={["/admin/providers"]}
                                 array={agentsData}
                                 search={"name"}
-                                keysToDisplay={["index", "name", "position", "department",]}
+                                keysToDisplay={["id", "name", "SUS", "department", "service"]}
                                 label={[
                                     "#",
-                                    "Name",
-                                    "Position",
-                                    "Department",
-                                    "Actions",
+                                    t("ChuCocody.Table1.Columns.Name"),
+                                    t("ChuCocody.Table1.Columns.Name"),
+                                    t("ChuCocody.Table1.Columns.Department"),
+                                    t("ChuCocody.Table1.Columns.Service"),
+                                    // "Actions",
                                 ]}
-                                // customBlocks={[
-                                //     {
-                                //         index: 4,
-                                //         component: (isValid) => {
-                                //             return isValid ? "Valid" : "Invalid"
-                                //         }
-                                //     }
-                                // ]}
-                                extraColumns={[
-                                    () => {
-                                        return (
-                                            <MdEdit
-                                                // onClick={() => navigate(`${"/admin/providers/"}${record.id}`)}
-                                                className="text-[#ccccc] text-[1.3rem]" />
-                                        );
-                                    },
-                                ]}
+                            // customBlocks={[
+                            //     {
+                            //         index: 4,
+                            //         component: (isValid) => {
+                            //             return isValid ? "Valid" : "Invalid"
+                            //         }
+                            //     }
+                            // ]}
+                            // extraColumns={[
+                            //     () => {
+                            //         return (
+                            //             <MdEdit
+                            //                 // onClick={() => navigate(`${"/admin/providers/"}${record.id}`)}
+                            //                 className="text-[#ccccc] text-[1.3rem]" />
+                            //         );
+                            //     },
+                            // ]}
                             />
                         </Card>
                         <Card
@@ -281,7 +310,7 @@ const Profile = () => {
                             subtitle={""}
                             headerslot={<button onClick={toggleModal} style={{ cursor: "pointer" }} className="px-4 py-2 border border-gray-300 rounded-md bg-blue-500 text-white hover:bg-blue-600">Add New Announcement</button>}
                             noborder={false}
-                            title="Anouncements "
+                            title={t("ChuCocody.Table2.Announcements")}
                         >
                             <Table
                                 // routes={["/admin/providers"]}
@@ -290,10 +319,10 @@ const Profile = () => {
                                 keysToDisplay={["id", "title", "issueDate", "endDate"]}
                                 label={[
                                     "#",
-                                    "Title",
-                                    "Date of issue",
-                                    "End Date",
-                                    "Actions",
+                                    t("ChuCocody.Table2.Columns.Title"),
+                                    t("ChuCocody.Table2.Columns.DateOfIssue"),
+                                    t("ChuCocody.Table2.Columns.EndDate"),
+                                    t("ChuCocody.Table2.Columns.Actions"),
                                 ]}
                                 // customBlocks={[
                                 //     {
@@ -318,7 +347,7 @@ const Profile = () => {
                             bodyClass="p-4"
                             subtitle=""
                             noborder={false}
-                            title="Organization Chart"
+                            title={t("ChuCocody.Organization Chart.Organization Chart")}
                             headerslot={""}
                         >
                             <div style={{ width: '80%', height: '16rem', alignSelf: "center", justifyContent: "center", position: 'relative', top: 0, marginLeft: "4rem" }}>
@@ -332,14 +361,14 @@ const Profile = () => {
                                 bodyClass="p-4"
                                 subtitle={""}
                                 noborder={false}
-                                title="Related Content"
+                                title={t("ChuCocody.Related Content.RelatedContent")}
                                 headerslot={""}
                             >
 
 
                                 <div className="flex items-center justify-between">
                                     <div className="flex flex-col">
-                                        <span className="text-lg font-bold mt-[1rem]">Agents</span>
+                                        <span className="text-lg font-bold mt-[1rem]">{t("ChuCocody.Related Content.Agents")}</span>
                                     </div>
 
                                     <div className="flex items-center">
@@ -349,7 +378,7 @@ const Profile = () => {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <div className="flex flex-col">
-                                        <span className="text-lg font-bold mt-[1rem]">Announcements</span>
+                                        <span className="text-lg font-bold mt-[1rem]">{t("ChuCocody.Related Content.Announcements")}</span>
                                     </div>
 
                                     <div className="flex items-center">

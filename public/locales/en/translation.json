@@ -1,0 +1,449 @@
+{
+  "sidebar": {
+    "MyDashboard": "My Dashboard",
+    "Dashboard": {
+      "Overview": "Overview",
+      "MyProfile": "My Profile",
+      "MyCCday": "My CHU Cocody"
+    },
+    "LeaveManagement": "Leave management",
+    "Evaluation": "Evaluation",
+    "Feedback": {
+      "Feedback": "Feedback",
+      "NursingSurveys": "Nursing & MidWifery Surveys",
+      "DoctorSurveys": "Doctor and Dentist Surveys"
+    },
+    "EmployeeManagement": "Employee Management",
+    "EmployeeManagementSub": {
+      "Teams": "Teams",
+      "Staff": "Staff",
+      "WorkSchedule": "Work Schedule"
+    },
+    "JobManagement": "Job Management",
+    "JobCodingSub": {
+      "Jobs": "Jobs",
+      "JobCoding": "Job Coding",
+      "JobsByDepartment": "Jobs by Department",
+      "RequestsList": "Requests list"
+    },
+    "Configuration": "Configuration",
+    "ConfigurationSub": {
+      "Department": "Department",
+      "EmployeePrivileges": "Employee Privileges",
+      "Employees": "Employees",
+      "Functions": "Functions",
+      "Grade": "Grade",
+      "Jobs": "Jobs",
+      "NatureofContract": "Nature of Contract",
+      "Privileges": "Privileges",
+      "Roles": "Roles",
+      "Services": "Services",
+      "Units": "Units"
+    },
+    "ResportingAnalytics": {
+      "index": "Reporting Analysis",
+      "HRDash": "HR Dashboard",
+      "AccessLogs": "Access Logs"
+    }
+  },
+  "Overview": {
+    "MyProfile": "My Profile",
+    "MyAbsencesAndHolidays": "My Absences & Holidays",
+    "MyAbsencesAndHolidaysChild": {
+      "TotalAbsents": "Total Absents",
+      "Percentage": "Percentage"
+    },
+    "RemainingLeave": "Remaining Leave",
+    "RemainingLeaveChild": {
+      "VacationBalance": "Vacation Balance",
+      "ViewDetails": "View Details"
+    },
+    "UpcomingLeaves": "Upcoming Leaves",
+    "UpcomingLeavesChild": {
+      "NumberOfLeaves": "Number of Leaves",
+      "Percentage": "Percentage"
+    },
+    "LeaveCalendar": "Leave Calendar",
+    "StaffSchedule": "Staff Schedule",
+    "StaffScheduleChild": {
+      "StartDate": "Start Date",
+      "EndDate": "End Date",
+      "StartTime": "Start Time",
+      "EndTime": "End Time",
+      "NextShift": "Next Shift",
+      "NextShiftChild": {
+        "Date": "Date",
+        "Time": "Time"
+      }
+    },
+    "MyAppraisal": "My Appraisal",
+    "MyAppraisalChild": {
+      "MyAppraisal": "My Appraisal",
+      "Status": "Status"
+    },
+    "MyFeedback": "My Feedbacks",
+    "MyFeedbackChild": {
+      "MyFeedback": "My Feedback",
+      "Status": "Status"
+    },
+    "CalendarFormChild": {
+      "PublicServiceJoiningDate": "Public Service Joining Date",
+      "JoiningChuDeCocodyDate": "Joining at CHU de COCODY Date:"
+    }
+  },
+  "LeaveManagement": {
+    "LeaveManagement": "Leave Management",
+    "Cards": {
+      "PendingLeaveRequests": "Pending Leave Requests",
+      "GrantedLeaveRequests": "Granted Leave Requests",
+      "RejectedLeaveRequests": "Rejected Leave Requests",
+      "MaternityLeaveRequests": "Maternity Leave Requests",
+      "CurrentStatus": "Current Status"
+    },
+    "AddLeave": "Add Leave",
+    "table": {
+      "LeaveManagement": "Leave Management",
+      "columns": {
+        "Name": "Name",
+        "Position": "Position",
+        "Department": "Department",
+        "RequestedTime": "REQUESTED TIME",
+        "Date": "Date",
+        "OutOfCountry": "Out Of Country",
+        "Status": "Status",
+        "Actions": "Actions"
+      }
+    }
+  },
+  "EditProfile": {
+    "Profile": "Profile",
+    "EnterDetails": "Enter Details",
+    "ProfilePhoto": "Profile Photo",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "Gender": "Gender",
+    "Title": "Title/Civility",
+    "Address": "Address",
+    "Email": "Email",
+    "PhoneNumber": "Mobile Phone Number",
+    "NatureofContract": "Nature of Contract",
+    "FunctionalDirection": "Functional Direction/Department",
+    "Division": "Division/Department",
+    "Rank": "Rank",
+    "LineManagers": "Line Managers",
+    "DirectionOfAssignment1": "Direction of Assignment of Responsibilities No 1",
+    "DirectionOfAssignment2": "Direction of Assignment of Responsibilities No 2",
+    "AdditionalNotes": "Additional Notes",
+    "Submit": "Submit"
+  },
+  "ChuCocody": {
+    "ChuCocody": "Chu Cocody",
+    "Table1": {
+      "Agents": "Agents",
+      "Columns": {
+        "Name": "Name",
+        "SUS": "SUS",
+        "Department": "Department",
+        "Service": "Service"
+      }
+    },
+    "Table2": {
+      "Announcements": "Announcements",
+      "AddNewAnnouncement": "Add New Announcement",
+      "Columns": {
+        "Title": "Title",
+        "DateOfIssue": "Date of Issue",
+        "EndDate": "End Date",
+        "Actions": "Actions"
+      }
+    },
+    "Organization Chart": {
+      "Organization Chart": "Organization Chart",
+      "Position": "Position",
+      "Department": "Department",
+      "DepartmentHead": "Department Head",
+      "SubDivision": "Sub division"
+    },
+    "Related Content": {
+      "RelatedContent": "Related Content",
+      "Agents": "Agents",
+      "Announcements": "Announcements"
+    }
+  },
+  "Evaluation": {
+    "Evaluation": "Evaluation",
+    "EvaluationRequests": "Evaluation Requests",
+    "OngoingEvaluations": "Ongoing Evaluations",
+    "EvaluatedEmployees": "Evaluated Employees",
+    "NonEvaluated": "Non Evaluated",
+    "CurrentUpadate": "Current Upadate",
+    "SearchEmployees": "Search Employees(After Selection)",
+    "SelectDepartment&service": "Select the department & service",
+    "SelectDepartment": "Select Department",
+    "SelectService": "Select Service",
+    "StartEvaluation": "Start Evaluation",
+    "Name": "Name",
+    "LineManagerN+1": "LINE MANAGER N+1",
+    "Type": "Type",
+    "LineManagerN+2": "LINE MANAGER N+2",
+    "Status": "Status",
+    "Actions": "Actions",
+    "ListOfEvaluations": "List Of Evaluations"
+  },
+  "Feedback": {
+    "ProvideFeedback": "Provide Feedback",
+    "SelectPerson": "Select the person",
+    "SelectReviewed:": "Select the person to be reviewed:",
+    "SelectColleague": "Select Colleague",
+    "ClickConfirm": "Click to confirm",
+    "SelectOptions": "Please select the required options",
+    "Reviews": "Reviews",
+    "table": {
+      "ReviewerName": "Reviewer Name",
+      "Comment": "Comment",
+      "TimeStamp": "Time Stamp",
+      "Rating": "Rating",
+      "Actions": "Actions"
+    }
+  },
+  "NursingSurveys": {
+    "NursingSurveys": "Nursing Surveys",
+    "RequestSurvey": "Request Survey",
+    "table": {
+      "Name": "Name",
+      "Description": "Description",
+      "DepartmentID": "Department Id",
+      "CreatedAt": "Created At",
+      "Actions": "Actions"
+    }
+  },
+  "DoctorSurveys": {
+    "RequestSurvey": "Request Survey",
+    "FeedbackForm": "View Feedback Form",
+    "table": {
+      "SurveyName": "Survey Name",
+      "Description": "Description",
+      "DepartmentID": "Department Id",
+      "CreatedAt": "Created At",
+      "Actions": "Actions"
+    }
+  },
+  "Staff": {
+    "StaffMembers": "Staff Members",
+    "AddStaff": "Add Staff",
+    "table": {
+      "Name": "Name",
+      "Department": "Department",
+      "Position": "Position",
+      "Status": "Status",
+      "Actions": "Actions"
+    }
+  },
+  "Teams": {
+    "AddTeam": "Add Team",
+    "Members": "Members",
+    "SelectService": "Select Service",
+    "SelectDepartment": "Select Department",
+    "SearchEmployee": "Search Employee",
+    "Close": "Close",
+    "Submit": "Submit"
+  },
+  "WorkSchedule": {
+    "WorkSchedule": "Work Schedule",
+    "AddWorkSchedule": "Add Work Schedule",
+    "SelectDaysCalender": "Select Days Calender",
+    "SelectTeam": "Select Team",
+    "Total Days": "Total Days",
+    "Shifts": "Shifts",
+    "Morning": "Morning",
+    "Evening": "Evening",
+    "Night": "Night",
+    "Upcoming Leaves": "Upcoming Leaves",
+    "Percentage": "Percentage",
+    "table": {
+      "Name": "Name",
+      "TeamCode": "Team Code",
+      "Shift": "Shift",
+      "Starting": "Starting",
+      "Ending": "Ending",
+      "Leave Conflicts": "Leave Conflicts",
+      "Service": "Service",
+      "Actions": "Actions"
+    }
+  },
+  "Jobs": {
+    "Jobs": "Jobs",
+    "JobDetails": "Job Details",
+    "AddJob": "Add Job",
+    "table": {
+      "JobTitle": "Job Title",
+      "Department": "Department",
+      "JobCode": "Job Code",
+      "Actions": "Actions"
+    }
+  },
+  "JobCoding": {
+    "JobCoding": "Job Coding",
+    "table": {
+      "JobTitle": "Job Title",
+      "JobCode": "Job Code",
+      "Department": "Department",
+      "JobDescription": "Job Description",
+      "Position": "Position",
+      "Actions": "Actions"
+    }
+  },
+  "JobsByDepartment": {
+    "JobsByDepartment": "Jobs By Department",
+    "table": {
+      "Position": "Position",
+      "TotalPosts": "Total Posts",
+      "Department": "Department",
+      "VancantPosts": "Vancant Posts",
+      "Actions": "Actions"
+    }
+  },
+  "RequestsList": {
+    "RequestsList": "Requests List",
+    "table": {
+      "RequestedBy": "Requested By",
+      "Designation": "Designation",
+      "Department": "Department",
+      "NumberOfPositions": "Number of Positions",
+      "Job Title": "Job Title",
+      "Status": "Status",
+      "Actions": "Actions"
+    }
+  },
+  "Department": {
+    "Department": "Department",
+    "AddDepartment": "Add Department",
+    "table": {
+      "DepartmentName": "Department Name",
+      "Description": "Description",
+      "CreatedAt": "Created At",
+      "Updated At": "Updated At",
+      "Actions": "Actions"
+    }
+  },
+  "Functions": {
+    "FunctionDetails": "Function Details",
+    "AddFunction": "Add Function",
+    "table": {
+      "FunctionName": "Function Name",
+      "Description": "Description",
+      "JobId": "Job Id",
+      "CreatedAt": "Created At",
+      "Updated At": "Updated At",
+      "Actions": "Actions"
+    }
+  },
+  "Grade": {
+    "GradeDetails": "Grade Details",
+    "AddGrade": "Add Grade",
+    "table": {
+      "GradeName": "Grade Name",
+      "GradeLevel": "Grade Level",
+      "JobId": "Job Id",
+      "CreatedAt": "Created At",
+      "Updated At": "Updated At",
+      "Actions": "Actions"
+    }
+  },
+  "NatureofContract": {
+    "NatureofContract": "Nature of Contract",
+    "AddNatureofContract": "Add Contract",
+    "table": {
+      "ContractName": "Contract Name",
+      "Description": "Description",
+      "CreatedAt": "Created At",
+      "Actions": "Actions"
+    }
+  },
+  "Privileges": {
+    "Privileges": "Privileges",
+    "AddPrivileges": "Add Privileges",
+    "table": {
+      "PrivilegeName": "Privilege Name",
+      "Description": "Description",
+      "CreatedAt": "Created At",
+      "Updated At": "Updated At",
+      "Actions": "Actions"
+    }
+  },
+  "Roles": {
+    "Roles": "Roles",
+    "AddRoles": "Add Roles",
+    "table": {
+      "RoleName": "Role Name",
+      "Description": "Description",
+      "CreatedAt": "Created At",
+      "Updated At": "Updated At",
+      "Actions": "Actions"
+    }
+  },
+  "Services": {
+    "Services": "Services",
+    "AddServices": "Add Services",
+    "table": {
+      "ServiceName": "Service Name",
+      "Description": "Description",
+      "DepartmentId": "Department id",
+      "CreatedAt": "Created At",
+      "Updated At": "Updated At",
+      "Actions": "Actions"
+    }
+  },
+  "Units": {
+    "Units": "Units",
+    "AddUnits": "Add Units",
+    "table": {
+      "UnitName": "Unit Name",
+      "Description": "Description",
+      "Service tId": "Service id",
+      "CreatedAt": "Created At",
+      "Updated At": "Updated At",
+      "Actions": "Actions"
+    }
+  },
+  "AccessLogs": {
+    "AccessLogs": "Access Logs",
+    "LastHours": "Last 24 hours",
+    "LastDays": "Last 30 days",
+    "MobileAppUsage": "Mobile App Usage",
+    "NeverLoggedIn": "Never Logged In",
+    "Users": "Users",
+    "Employees": "Employees",
+    "ActiveUsers": "Active Users",
+    "InActiveUsers": "In Active Users",
+    "GraphicalVisualization": "Graphical visualization of user status",
+    "Staff Members": "Staff Members",
+    "table": {
+      "UserName": "User Name",
+      "Action": "Action",
+      "IPAddress": "IP Address",
+      "Status": "Status"
+    }
+  },
+  "HRDash": {
+    "ReportingAnalysis": "Reporting and Analysis",
+    "NewAgents": "New Agents(last 30 days)",
+    "NumberDepartures": "Number of Departures",
+    "Number": "Number",
+    "Reason": "Reason",
+    "NumberAgentsTraining": "Number of Agents in training",
+    "NumberAgentsAssigned": "Number of Agents Assigned",
+    "TimeSpan": "Time Span",
+    "WorkforceGender": "Workforce by Gender",
+    "table": {
+      "Name": "Name",
+      "Employment": "Employment",
+      "SUS": "SUS",
+      "Subdivision": "Subdivision"
+    },
+    "RetirementsCurrentYear": "Retirements in Current Year",
+    "NumberOfRetirements": "Number of Retirements",
+    "NumberLaborHired": "Number of Labor(Hired)",
+    "NumberOfLabor": "Number of Labor"
+  }
+}

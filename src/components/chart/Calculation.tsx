@@ -2,21 +2,17 @@ import { colors } from "../../constant/data";
 import useDarkMode from "../../hooks/useDarkMode";
 import ApexChart from "react-apexcharts";
 
-//@ts-ignore
-
-// import dynamic from "next/dynamic";
-// const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 const Calculation = ({ height = 335 }) => {
   const [isDark] = useDarkMode();
-  const series = [44, 55, 30];
+  const series = [70, 30];
 
   const options = {
-    labels: ["70% Sent", "18% Opend", "12% Rejected"],
+    labels: ["70% Men", "30% Women"],
     dataLabels: {
       enabled: true,
     },
 
-    colors: [colors.success, colors.warning, "#A3A1FB"],
+    colors: [colors.success, "#A3A1FB"],
     legend: {
       position: "bottom",
       fontSize: "12px",

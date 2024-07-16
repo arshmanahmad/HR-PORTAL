@@ -10,7 +10,10 @@ interface TableProps {
   label?: string[];
   keysToDisplay?: string[];
   filter?: () => JSX.Element;
-  customBlocks?: { index: number; component: (data: any) => JSX.Element }[];
+  customBlocks?: {
+    index: number;
+    component: (data: any) => JSX.Element | null;
+  }[];
   extraColumns?: ((obj: any) => JSX.Element)[];
   setRecord?: (record: any) => void;
   search?: string;
@@ -33,16 +36,15 @@ const Table: React.FC<TableProps> = ({
   const [noOfRecordsPerPage, setNoOfRecordsPerPage] = useState<number>(10);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [recordsPerPage, setRecordsPerPage] = useState<any[]>();
-
   useEffect(() => {
     setRecordsPerPage(
       array &&
-      array.filter((obj) => {
-        return (
-          searchedData === "" ||
-          obj[search!].toLowerCase().includes(searchedData.toLowerCase())
-        );
-      })
+        array.filter((obj) => {
+          return (
+            searchedData === "" ||
+            obj[search!].toLowerCase().includes(searchedData.toLowerCase())
+          );
+        })
     );
   }, [searchedData]);
 
@@ -65,7 +67,7 @@ const Table: React.FC<TableProps> = ({
 
   return (
     <>
-      <div className="flex justify-end">
+      <div className="flex justify-end items-center mb-4">
         {search && (
           <TableSearchBar
             onChange={(event: ChangeEvent<HTMLInputElement>) =>
@@ -84,12 +86,13 @@ const Table: React.FC<TableProps> = ({
                   <th
                     key={index}
                     className={`py-4 bg-[#F9FAFB] font-[600] text-[15px] text-[#1D2939] whitespace-nowrap 
-                        ${index === label.length - 1
-                        ? "text-right pr-9 rounded-tr-[9px]"
-                        : index === 0
-                          ? "text-left pl-9 rounded-tl-[9px]"
-                          : "text-left pl-9"
-                      }
+                        ${
+                          index === label.length - 1
+                            ? "text-right pr-9 rounded-tr-[9px]"
+                            : index === 0
+                            ? "text-left pl-9 rounded-tl-[9px]"
+                            : "text-left pl-9"
+                        }
                         `}
                   >
                     {text}
@@ -119,10 +122,11 @@ const Table: React.FC<TableProps> = ({
                               if (routes.length > 0)
                                 navigate(`${routes[0]}/${obj.id}`);
                             }}
-                            className={`py-4 font-[400] text-[14px] text-[#858992] text-left pl-9 whitespace-nowrap ${index === label.length - 1
-                              ? "text-right pr-9"
-                              : "text-left pl-9"
-                              }`}
+                            className={`py-4 font-[400] text-[14px] text-[#858992] text-left pl-9 whitespace-nowrap ${
+                              index === label.length - 1
+                                ? "text-right pr-9"
+                                : "text-left pl-9"
+                            }`}
                           >
                             {blocksList
                               ? blocksList.component(key ? obj[key] : obj)

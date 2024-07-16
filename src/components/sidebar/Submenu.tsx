@@ -3,6 +3,7 @@ import Multilevel from "./Multi";
 import { Collapse } from "react-collapse";
 import Icon from "../ui/Icon";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface SubmenuI {
   activeSubmenu: any;
@@ -18,6 +19,8 @@ interface SubmenuI {
 }
 
 const Submenu = ({ activeSubmenu, item, i, locationName }: SubmenuI) => {
+  const { t } = useTranslation();
+
   const [activeMultiMenu, setMultiMenu] = useState(null);
 
   const toggleMultiMenu = (j: number) => {
@@ -50,7 +53,9 @@ const Submenu = ({ activeSubmenu, item, i, locationName }: SubmenuI) => {
                         : ""
                     } h-2 w-2 rounded-full border border-slate-600 dark:border-white inline-block flex-none `}
                   ></span>
-                  <span className="flex-1">{subItem.childtitle}</span>
+                  <span className="flex-1">
+                    {t("sidebar." + subItem.childtitle)}
+                  </span>
                   <span className="flex-none">
                     <span
                       className={`menu-arrow transform transition-all duration-300 ${
@@ -84,7 +89,9 @@ const Submenu = ({ activeSubmenu, item, i, locationName }: SubmenuI) => {
                         : ""
                     } h-2 w-2 rounded-full border border-slate-600 dark:border-white inline-block flex-none`}
                   ></span>
-                  <span className="flex-1">{subItem.childtitle}</span>
+                  <span className="flex-1">
+                    {t("sidebar." + subItem.childtitle)}
+                  </span>
                 </span>
               </Link>
             )}

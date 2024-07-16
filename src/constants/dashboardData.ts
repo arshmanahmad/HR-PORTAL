@@ -128,105 +128,269 @@ export const menuItems: MenuItemI[] = [
   //   icon: "heroicons-outline:table",
   //   link: "/guide/utilisateur",
   // },
+  // {
+  //   isHeadr: true,
+  //   title: "Profile",
+  // },
   {
-    isHeadr: true,
-    title: "Profile",
-  },
-  {
-    title: "Profile",
+    title: "MyDashboard",
     icon: "heroicons-outline:home",
     isOpen: true,
     isHide: false,
     child: [
       {
-        childtitle: "Profile",
+        childtitle: "Dashboard.Overview",
         childlink: "/dashboard/profile",
       },
       {
-        childtitle: "My CHU Cocody",
+        childtitle: "Dashboard.MyProfile",
+        childlink: "/dashboard/profile/editProfile",
+      },
+      {
+        childtitle: "Dashboard.MyCCday",
         childlink: "/dashboard/myChuCocody",
       },
+
+      // {
+      //   childtitle: "Feedback",
+      //   childlink: "/dashboard/surveyFeedback",
+      // },
     ],
   },
   {
-    title: "Leave management",
+    title: "LeaveManagement",
     icon: "heroicons-outline:lock-closed",
     isOpen: true,
     isHide: false,
-    link: "/dashboard/crm",
+    link: "/dashboard/leaveManagement",
   },
   {
-    isHeadr: true,
-    title: "Settings",
-  },
-  {
-    title: "Admin Settings",
-    icon: "heroicons-outline:home",
-    isOpen: true,
-    link: "/dashboard/profile",
-    isHide: false,
-    child: [
-      {
-        childtitle: "Staff Schedules",
-        childlink: "/dashboard/profile",
-      },
-      {
-        childtitle: "Job Coding",
-        childlink: "/dashboard/profile",
-      },
-      {
-        childtitle: "Structures",
-        childlink: "/dashboard/profile",
-      },
-    ],
-  },
-  {
-    isHeadr: true,
-    title: "Personnel Administration",
-  },
-  {
-    title: "Personnel Admin",
-    icon: "heroicons-outline:chat",
+    title: "Evaluation",
+    icon: "heroicons-outline:view-grid-add",
     isOpen: true,
     isHide: false,
-    child: [
-      {
-        childtitle: "Bonus Management",
-        childlink: "/dashboard/profile",
-      },
-      {
-        childtitle: "Document management",
-        childlink: "/dashboard/profile",
-      },
-      {
-        childtitle: "Employee management",
-        childlink: "/dashboard/profile",
-      },
-    ],
+    link: "/dashboard/evaluation",
   },
-
+  // {
+  //   title: "Feedback",
+  //   icon: "heroicons-outline:view-grid-add",
+  //   isOpen: true,
+  //   isHide: false,
+  //   link: "/dashboard/surveyFeedback",
+  // },
   {
-    title: "Reporting & Analysis",
+    title: "Feedback.Feedback",
     icon: "heroicons-outline:view-grid-add",
     isOpen: true,
     isHide: false,
     child: [
       {
-        childtitle: "Feedback",
-        childlink: "/dashboard/profile",
+        childtitle: "Feedback.Feedback",
+        childlink: "/dashboard/surveyFeedback",
       },
       {
-        childtitle: "Evaluation",
-        childlink: "/dashboard/profile",
+        childtitle: "Feedback.NursingSurveys",
+        childlink: "/dashboard/nursingMidwiferySurveys",
       },
       {
-        childtitle: "Personnel Administration",
-        childlink: "/dashboard/profile",
+        childtitle: "Feedback.DoctorSurveys",
+        childlink: "/dashboard/doctorAndDentistSurveys",
+      },
+    ],
+  },
+  {
+    title: "EmployeeManagement",
+    icon: "heroicons-outline:view-grid-add",
+    isOpen: true,
+    isHide: false,
+    child: [
+      // {
+      //   childtitle: "Staff Schedule",
+      //   childlink: "/dashboard/staff",
+      // },
+      {
+        childtitle: "EmployeeManagementSub.Staff",
+        childlink: "/dashboard/staff",
       },
       {
-        childtitle: "Leave Management",
-        childlink: "/dashboard/profile",
+        childtitle: "EmployeeManagementSub.Teams",
+        childlink: "/dashboard/teams",
       },
+      {
+        childtitle: "EmployeeManagementSub.WorkSchedule",
+        childlink: "/dashboard/workSchedule",
+      },
+    ],
+  },
+  {
+    title: "JobManagement",
+    icon: "heroicons-outline:home",
+    isOpen: true,
+    isHide: false,
+    child: [
+      {
+        childtitle: "JobCodingSub.Jobs",
+        childlink: "/dashboard/jobs",
+      },
+      // {
+      //   childtitle: "JobCodingSub.JobCoding",
+      //   childlink: "/dashboard/jobCoding",
+      // },
+      {
+        childtitle: "JobCodingSub.JobsByDepartment",
+        childlink: "/dashboard/jobsByDepartment",
+      },
+      {
+        childtitle: "JobCodingSub.RequestsList",
+        childlink: "/dashboard/requestsLists",
+      },
+    ],
+  },
+
+  // {
+  //   title: "Employee management",
+  //   icon: "heroicons-outline:view-grid-add",
+  //   isOpen: true,
+  //   isHide: false,
+  //   link: "/dashboard/staff/addStaff",
+  // },
+  {
+    title: "Configuration",
+    icon: "heroicons-outline:view-grid-add",
+    isOpen: true,
+    isHide: false,
+    child: [
+      {
+        childtitle: "ConfigurationSub.Department",
+        childlink: "/dashboard/department",
+      },
+      // {
+      //   childtitle: "Employee Privileges",
+      //   childlink: "/dashboard/employeePrivileges",
+      // },
+      // {
+      //   childtitle: "Employees ",
+      //   childlink: "/dashboard/employees",
+      // },
+
+      {
+        childtitle: "ConfigurationSub.Functions",
+        childlink: "/dashboard/functions",
+      },
+
+      {
+        childtitle: "ConfigurationSub.Grade",
+        childlink: "/dashboard/grades",
+      },
+      // {
+      //   childtitle: "Jobs",
+      //   childlink: "/dashboard/job",
+      // },
+      {
+        childtitle: "ConfigurationSub.NatureofContract",
+        childlink: "/dashboard/natureContract",
+      },
+      {
+        childtitle: "ConfigurationSub.Privileges",
+        childlink: "/dashboard/privileges",
+      },
+      {
+        childtitle: "ConfigurationSub.Roles",
+        childlink: "/dashboard/roles",
+      },
+      {
+        childtitle: "ConfigurationSub.Services",
+        childlink: "/dashboard/services",
+      },
+      {
+        childtitle: "ConfigurationSub.Units",
+        childlink: "/dashboard/unit",
+      },
+    ],
+  },
+  // {
+  //   title: "",
+  //   icon: "heroicons-outline:chat",
+  //   isOpen: true,
+  //   isHide: false,
+  //   child: [
+  //     {
+  //       childtitle: "Bonus Management",
+  //       childlink: "/dashboard/profile",
+  //     },
+  //     {
+  //       childtitle: "Document management",
+  //       childlink: "/dashboard/profile",
+  //     },
+  //     {
+  //       childtitle: "Employee management",
+  //       childlink: "/dashboard/staff/addStaff",
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   title: "Admin Settings",
+  //   icon: "heroicons-outline:home",
+  //   isOpen: true,
+  //   isHide: false,
+  //   child: [
+  //     {
+  //       childtitle: "Job Coding",
+  //       childlink: "/dashboard/crm",
+  //     },
+  //     {
+  //       childtitle: "Structures",
+  //       childlink: "/dashboard/profile",
+  //     },
+  //   ],
+  // },
+  // {
+  //   isHeadr: true,
+  //   title: "Personnel Administration",
+  // },
+
+  // {
+  //   title: "Personnel Admin",
+  //   icon: "heroicons-outline:chat",
+  //   isOpen: true,
+  //   isHide: false,
+  //   child: [
+  //     {
+  //       childtitle: "Bonus Management",
+  //       childlink: "/dashboard/profile",
+  //     },
+  //     {
+  //       childtitle: "Document management",
+  //       childlink: "/dashboard/profile",
+  //     },
+  //     {
+  //       childtitle: "Employee management",
+  //       childlink: "/dashboard/staff/addStaff",
+  //     },
+  //   ],
+
+  // },
+
+  {
+    title: "ResportingAnalytics.index",
+    icon: "heroicons-outline:view-grid-add",
+    isOpen: true,
+    isHide: false,
+    child: [
+      {
+        childtitle: "ResportingAnalytics.HRDash",
+        childlink: "/dashboard/hrDashboard",
+      },
+      {
+        childtitle: "ResportingAnalytics.AccessLogs",
+        childlink: "/dashboard/accessLogs",
+      },
+
+      // {
+      //   childtitle: "Feedback",
+      //   childlink: "/dashboard/feedback",
+      // },
     ],
   },
 ];

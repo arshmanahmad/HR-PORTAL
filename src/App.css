@@ -1,0 +1,45 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.survey-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.survey-table th,
+.survey-table td {
+    border: 1px solid #ddd;
+
+    border-bottom: none;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+.survey-table th {
+    font-weight: 400;
+    border-top: none;
+
+}
+
+.survey-table td {
+    width: 100px;
+    /* Adjust width if necessary */
+}
+
+.ant-radio-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-form-item {
+    margin-bottom: 0;
+    /* Remove margin between radio buttons */
+}

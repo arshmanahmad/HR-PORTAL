@@ -2,7 +2,7 @@ import Icon from "../ui/Icon";
 
 const statistics = [
   {
-    title: "Sales",
+    title: "Agents",
     count: "354",
     bg: "bg-warning-500",
     text: "text-primary-500",
@@ -12,7 +12,7 @@ const statistics = [
     percentClass: "text-primary-500",
   },
   {
-    title: "Revenue ",
+    title: "Retirements",
     count: "$86,954",
 
     bg: "bg-info-500",
@@ -23,7 +23,7 @@ const statistics = [
     percentClass: "text-primary-500",
   },
   {
-    title: "Conversion",
+    title: "Agents Assigned",
     count: "15%",
     bg: "bg-primary-500",
     text: "text-danger-500",
@@ -33,7 +33,7 @@ const statistics = [
     percentClass: "text-danger-500",
   },
   {
-    title: "Leads",
+    title: "Agents in Training",
     count: "654",
     bg: "bg-success-500",
     text: "text-primary-500",
@@ -74,7 +74,7 @@ const GroupChart3 = () => {
                 {item.percent}
               </span>
               <span className="block mb-1 text-slate-600 dark:text-slate-300">
-                From last week
+                From last 30 days
               </span>
             </div>
           </div>

@@ -1,15 +1,24 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import fr_flag from "../../../assets/images/flags/gn.png";
+import fr_flag from "../../../assets/images/flags/france.png";
 import en_flag from "../../../assets/images/flags/usa.png";
+import i18n from "../../../i18next";
 
 const months = [
-  { name: "Fr", image: fr_flag },
-  { name: "En", image: en_flag },
+  { name: "En", code: "en", image: en_flag },
+  { name: "Fr", code: "fr", image: fr_flag },
 ];
 
 const Language = () => {
-  const [selected, setSelected] = useState(months[0]);
+  const languageObj = localStorage.getItem("i18nextLng");
+  const [selected, setSelected] = useState(
+    months.find((language) => language.code === languageObj) || months[0]
+  );
+
+  useEffect(() => {
+    console.log(selected);
+    i18n.changeLanguage(selected.code);
+  }, [selected]);
 
   return (
     <div>
