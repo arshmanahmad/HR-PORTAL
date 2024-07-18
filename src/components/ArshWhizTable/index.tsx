@@ -1,4 +1,5 @@
 import React from "react"
+import { TableHeadingFilter } from "./service";
 
 interface TableProps {
     arrayOfData: { [key: string]: any }[],  // Define the type for arrayOfData
@@ -16,31 +17,22 @@ const Table: React.FC<TableProps> = ({
     arrayOfData,
 }) => {
     const keys = Object.keys(arrayOfData[0]);
-
+    console.log(keys);
     return (
         <>
             <div>
                 <table>
                     <thead>
-                        {!attributesToShow && !attributesNames ?
+                        {!attributesToShow ?
                             <>
-                                {keys.map((item) => {
-                                    {
-                                        attributesNames.filter((customizedNames) => {
-                                            return <td></td>
-                                        })
-                                    }
+                                {TableHeadingFilter(keys, attributesNames).map((item) => {
+                                    return <th>{item}</th>
                                 })}
                             </> :
                             <>
-                                {attributesToShow ? attributesToShow.map((item) => {
-                                    return <th>{item}</th>
-                                })
-                                    : <>
-                                        {attributesNames.map((item) => {
-                                            return <th>{item}</th>
-                                        })}
-                                    </>}
+                                {TableHeadingFilter(attributesToShow, attributesNames).map((item) => {
+
+                                })}
                             </>
                         }
                     </thead>

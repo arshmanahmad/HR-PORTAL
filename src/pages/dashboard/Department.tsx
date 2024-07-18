@@ -206,6 +206,8 @@ const Department: React.FC = () => {
           title="Details"
         ><ArshWhizTable
             arrayOfData={departmentData}
+            attributesNames={["Id", "Name", "Contract Nature", "Department", "Created At", "Updated At"]}
+
           />
           {/* <Table
             array={departmentData}
