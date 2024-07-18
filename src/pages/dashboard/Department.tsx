@@ -5,7 +5,7 @@ import Table from "../../components/MainTable/Table";
 import { useState } from "react";
 import Modal from "../../components/Modal/Modal";
 import { useTranslation } from "react-i18next";
-
+import ArshWhizTable from '../../components/ArshWhizTable/index'
 interface Department {
   department_id: number;
   department_name: string;
@@ -204,8 +204,10 @@ const Department: React.FC = () => {
           }
           noborder={false}
           title="Details"
-        >
-          <Table
+        ><ArshWhizTable
+            arrayOfData={departmentData}
+          />
+          {/* <Table
             array={departmentData}
             search={"department_name"}
             keysToDisplay={[
@@ -225,20 +227,20 @@ const Department: React.FC = () => {
               t("Department.table.Updated At"),
               t("Department.table.Actions"),
             ]}
-            // customBlocks={[
-            //     {
-            //         index: 4,
-            //         component: (isValid) => {
-            //             return isValid ? "Valid" : "Invalid"
-            //         }
-            //     }
-            // ]}
+            customBlocks={[
+                {
+                    index: 4,
+                    component: (isValid) => {
+                        return isValid ? "Valid" : "Invalid"
+                    }
+                }
+            ]}
             extraColumns={[
               () => {
                 return <MdEdit className="text-[#ccccc] text-[1.3rem]" />;
               },
             ]}
-          />
+          /> */}
         </Card>
       </div>
     </div>

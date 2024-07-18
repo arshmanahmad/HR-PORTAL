@@ -13,7 +13,9 @@ interface TableProps {
 const Table: React.FC<TableProps> = ({
     attributesToShow,
     attributesNames,
+    arrayOfData,
 }) => {
+    const keys = Object.keys(arrayOfData[0]);
 
     return (
         <>
@@ -22,6 +24,13 @@ const Table: React.FC<TableProps> = ({
                     <thead>
                         {!attributesToShow && !attributesNames ?
                             <>
+                                {keys.map((item) => {
+                                    {
+                                        attributesNames.filter((customizedNames) => {
+                                            return <td></td>
+                                        })
+                                    }
+                                })}
                             </> :
                             <>
                                 {attributesToShow ? attributesToShow.map((item) => {
