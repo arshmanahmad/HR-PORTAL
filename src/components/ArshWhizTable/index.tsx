@@ -14,6 +14,7 @@ const Table: React.FC<TableProps> = ({
     attributesToShow,
     attributesNames,
 }) => {
+
     return (
         <>
             <div>
