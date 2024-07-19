@@ -1,7 +1,5 @@
 import Card from "../../components/ui/Card";
 import HomeBredCurbs from "../../components/chart/HomeBredCurbs";
-import { MdEdit } from "react-icons/md";
-import Table from "../../components/MainTable/Table";
 import { useState } from "react";
 import Modal from "../../components/Modal/Modal";
 import { useTranslation } from "react-i18next";
