@@ -30,13 +30,14 @@ const Table: React.FC<TableProps> = ({
                                 })}
                             </> :
                             <>
-                                {TableHeadingFilter(attributesToShow, attributesNames).map((item) => {
-                                    {
-                                        keys.map((itemToShow) => {
-                                            return <th>{item[itemToShow]}</th>
+
+                                {
+                                    TableHeadingFilter(keys.filter(item => attributesNames.includes(item)), attributesNames)
+                                        .map((item) => {
+                                            return <th>{item}</th>
                                         })
-                                    }
-                                })}
+                                }
+
                             </>
                         }
                     </thead>
