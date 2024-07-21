@@ -45,32 +45,6 @@ const Table: React.FC<TableProps> = ({
                     </tr>
                 </thead>
                 <tbody>
-                    {/* {arrayOfData.map((item, index) => (
-                        <tr key={index}>
-                            {filteredKeys.map((header) => (
-                                <td key={header}>{item[header]}</td>
-                            ))}
-                        </tr>
-                    ))} */}
-
-                    {/* {arrayOfData.map((item, index) => (
-                        <tr key={index}>
-                            {filteredKeys.map((header) => (
-                                <td key={header}>{item[header]}</td>
-                            ))}
-                            {extraAttributeValueColumns.length > 0 && (
-                                <td>
-                                    {extraAttributeValueColumns.map((extraItem, extraIndex) => (
-                                        <div key={extraIndex}>
-                                            {typeof extraItem === "function"
-                                                ? extraItem(item) // If extraItem is a function, call it with the item
-                                                : extraItem}
-                                        </div>
-                                    ))}
-                                </td>
-                            )}
-                        </tr>
-                    ))} */}
 
                     {arrayOfData.map((item, rowIndex) => (
                         <tr key={rowIndex}>
@@ -96,3 +70,30 @@ const Table: React.FC<TableProps> = ({
 };
 
 export default Table;
+
+{/* {arrayOfData.map((item, index) => (
+    <tr key={index}>
+        {filteredKeys.map((header) => (
+            <td key={header}>{item[header]}</td>
+        ))}
+    </tr>
+))} */}
+
+{/* {arrayOfData.map((item, index) => (
+    <tr key={index}>
+        {filteredKeys.map((header) => (
+            <td key={header}>{item[header]}</td>
+        ))}
+        {extraAttributeValueColumns.length > 0 && (
+            <td>
+                {extraAttributeValueColumns.map((extraItem, extraIndex) => (
+                    <div key={extraIndex}>
+                        {typeof extraItem === "function"
+                            ? extraItem(item) // If extraItem is a function, call it with the item
+                            : extraItem}
+                    </div>
+                ))}
+            </td>
+        )}
+    </tr>
+))} */}
