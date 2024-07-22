@@ -207,7 +207,11 @@ const Department: React.FC = () => {
             attributesToShow={["department_id", "department_name", "natureOfContract", "department_description", "created_at"]}
             attributesNames={["Id", "Name", "Contract Nature", "Department", "Created At", "extraFirst", "extraSecond", "extraThird"]}
             extraAttributeValueColumns={[
-              { value: (item: { [key: string]: any }) => <button onClick={() => alert(item.name)}>Alert Name</button>, columnIndex: 5 },
+              {
+                value: (item: { [key: string]: any }) => <button
+                  className="border p-4"
+                  onClick={() => alert(item.name)}>Alert Name</button>, columnIndex: 5
+              },
               { value: 'Static Extra', columnIndex: 6 },
               { value: 'Extra', columnIndex: 7 },
             ]}
