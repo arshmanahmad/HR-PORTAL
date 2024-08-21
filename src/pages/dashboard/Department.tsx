@@ -205,7 +205,7 @@ const Department: React.FC = () => {
         ><ArshWhizTable
             arrayOfData={departmentData}
             attributesToShow={["department_id", "department_name", "natureOfContract", "department_description", "created_at"]}
-            attributesNames={["Id", "Name", "Contract Nature", "Department", "Created At", "extraFirst", "extraSecond", "extraThird"]}
+            attributesNames={["No.", "Name", "Contract Nature", "Department", "Created At", "extraFirst", "extraSecond", "extraThird"]}
             extraAttributeValueColumns={[
               {
                 value: (item: { [key: string]: any }) => <button
