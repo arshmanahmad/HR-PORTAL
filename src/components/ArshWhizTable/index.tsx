@@ -26,6 +26,7 @@ const Table: React.FC<TableProps> = ({
     attributesNames = [],
     arrayOfData = [],
     extraAttributeValueColumns = [],
+    onRecordClick
 }) => {
     const keys = arrayOfData.length > 0 ? Object.keys(arrayOfData[0]) : [];
     console.log(keys);
@@ -47,7 +48,7 @@ const Table: React.FC<TableProps> = ({
                 <tbody>
 
                     {arrayOfData.map((item, rowIndex) => (
-                        <tr key={rowIndex}>
+                        <tr key={rowIndex} onClick={onRecordClick}>
                             {Array.from({ length: totalColumns }, (_, colIndex) => {
                                 const extraItem = extraAttributeValueColumns.find(extra => extra.columnIndex === colIndex);
                                 return (
