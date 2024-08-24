@@ -3,7 +3,7 @@ import HomeBredCurbs from "../../components/chart/HomeBredCurbs";
 import { useState } from "react";
 import Modal from "../../components/Modal/Modal";
 import { useTranslation } from "react-i18next";
-import ArshWhizTable from '../../components/ArshWhizTable/index'
+import ArshWhizTable from "../../components/ArshWhizTable/index";
 interface Department {
   department_id: number;
   department_name: string;
@@ -202,18 +202,40 @@ const Department: React.FC = () => {
           }
           noborder={false}
           title="Details"
-        ><ArshWhizTable
+        >
+          <ArshWhizTable
             arrayOfData={departmentData}
-            attributesToShow={["department_id", "department_name", "natureOfContract", "department_description", "created_at"]}
-            attributesNames={["No.", "Name", "Contract Nature", "Department", "Created At", "extraFirst", "extraSecond", "extraThird"]}
+            attributesToShow={[
+              "department_id",
+              "department_name",
+              "natureOfContract",
+              "department_description",
+              "created_at",
+            ]}
+            attributesNames={[
+              "No.",
+              "Name",
+              "Contract Nature",
+              "Department",
+              "Created At",
+              "extraFirst",
+              "extraSecond",
+              "extraThird",
+            ]}
             extraAttributeValueColumns={[
               {
-                value: (item: { [key: string]: any }) => <button
-                  className="border p-4"
-                  onClick={() => alert(item.name)}>Alert Name</button>, columnIndex: 5
+                value: (item: { [key: string]: any }) => (
+                  <button
+                    className="border p-4"
+                    onClick={() => alert(item.name)}
+                  >
+                    Alert Name
+                  </button>
+                ),
+                columnIndex: 5,
               },
-              { value: 'Static Extra', columnIndex: 6 },
-              { value: 'Extra', columnIndex: 7 },
+              { value: "Static Extra", columnIndex: 6 },
+              { value: "Extra", columnIndex: 7 },
             ]}
           />
           {/* <Table
