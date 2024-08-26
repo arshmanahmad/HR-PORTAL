@@ -203,6 +203,8 @@ const Department: React.FC = () => {
           noborder={false}
           title="Details"
         >
+
+        
           <ArshWhizTable
             arrayOfData={departmentData}
             attributesToShow={[
