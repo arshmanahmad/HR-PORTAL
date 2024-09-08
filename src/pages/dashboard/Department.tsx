@@ -203,7 +203,6 @@ const Department: React.FC = () => {
           noborder={false}
           title="Details"
         >
-          {/* //asdsasdfdsfdsasdasx\zxasdasdas */}
           <ArshWhizTable
             arrayOfData={departmentData}
             attributesToShow={[
@@ -239,40 +238,6 @@ const Department: React.FC = () => {
               { value: "Extra", columnIndex: 7 },
             ]}
           />
-          {/* <Table
-            array={departmentData}
-            search={"department_name"}
-            keysToDisplay={[
-              "department_id",
-              "department_name",
-              "natureOfContract",
-              "department_description",
-              "created_at",
-              "updated_at",
-            ]}
-            label={[
-              "#",
-              t("Department.table.DepartmentName"),
-              "Nature Of Contract",
-              t("Department.table.Description"),
-              t("Department.table.CreatedAt"),
-              t("Department.table.Updated At"),
-              t("Department.table.Actions"),
-            ]}
-            customBlocks={[
-                {
-                    index: 4,
-                    component: (isValid) => {
-                        return isValid ? "Valid" : "Invalid"
-                    }
-                }
-            ]}
-            extraColumns={[
-              () => {
-                return <MdEdit className="text-[#ccccc] text-[1.3rem]" />;
-              },
-            ]}
-          /> */}
         </Card>
       </div>
     </div>
